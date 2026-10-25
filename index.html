@@ -1,0 +1,2219 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S_NEX SARL | Télécommunications, Énergie & Photovoltaïque - Abidjan & Afrique de l'Ouest</title>
+  <meta name="description" content="S_NEX SARL - Spécialiste en infrastructures télécoms, sécurisation énergétique, groupes électrogènes et centrales solaires photovoltaïques à Abidjan (Port-Bouët Gonzagueville) et en Afrique de l'Ouest.">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Space Grotesk', 'sans-serif'],
+          },
+          colors: {
+            snex: {
+              navy: '#0B2046',
+              blue: '#0284C7',
+              blueDark: '#1E3A8A',
+              orange: '#EA580C',
+              orangeLight: '#FB923C',
+              green: '#16A34A',
+              greenLight: '#34D399',
+              dark: '#0F172A',
+              surface: '#F8FAFC',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .glass-nav {
+      background: rgba(11, 32, 70, 0.95);
+      backdrop-filter: blur(12px);
+    }
+    .custom-shadow {
+      box-shadow: 0 10px 30px -5px rgba(11, 32, 70, 0.1);
+    }
+    .country-node {
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .country-node:hover {
+      transform: scale(1.02);
+      filter: brightness(1.15);
+    }
+    .form-field {
+      width: 100%;
+      border-radius: 0.75rem;
+      border: 1px solid #e2e8f0;
+      background: #f8fafc;
+      padding: 0.7rem 0.9rem;
+      font-size: 0.875rem;
+      color: #334155;
+      outline: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    .form-field:focus {
+      border-color: #0284C7;
+      box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.12);
+    }
+    .form-field::placeholder {
+      color: #94a3b8;
+    }
+    .section-card {
+      box-shadow: 0 12px 30px -18px rgba(15, 23, 42, 0.25);
+    }
+    @media (max-width: 640px) {
+      .fixed.bottom-6 {
+        right: 1rem;
+        bottom: 1rem;
+      }
+      .mobile-compact {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .floating-contact-btn span {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-snex-blue selection:text-white">
+
+  <!-- TOP BAR (B2B contacts, localization & urgent SLA) -->
+  <div class="bg-snex-navy text-slate-300 text-xs border-b border-white/10 hidden md:block">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex justify-between items-center">
+      <div class="flex items-center space-x-6">
+        <span class="flex items-center space-x-1.5">
+          <svg class="w-3.5 h-3.5 text-snex-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+          <span>Siège social : Abidjan, Port-Bouët – Gonzagueville, Côte d’Ivoire</span>
+        </span>
+        <span class="flex items-center space-x-1.5">
+          <svg class="w-3.5 h-3.5 text-snex-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          <span>Assistance technique & astreinte : <strong class="text-white">24/7</strong></span>
+        </span>
+      </div>
+      <div class="flex items-center space-x-6">
+        <a href="tel:+2252721000000" class="flex items-center space-x-1 hover:text-white transition">
+          <svg class="w-3.5 h-3.5 text-snex-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+          <span>+225 27 21 58 40 10</span>
+        </a>
+        <a href="mailto:contact@snex-sarl.com" class="flex items-center space-x-1 hover:text-white transition">
+          <svg class="w-3.5 h-3.5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+          <span>contact@snex-sarl.com</span>
+        </a>
+        <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-semibold bg-white/10 text-emerald-400 border border-emerald-500/30">
+          UEMOA / CEDEAO
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="glass-nav text-white sticky top-0 z-50 transition-all border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="#accueil" class="flex items-center space-x-3 group">
+          <div class="relative w-11 h-11 bg-white/10 rounded-xl p-2 flex items-center justify-center border border-white/20 group-hover:border-snex-blue transition">
+            <!-- Tri-color emblem representing Telecom, Energy, Solar -->
+            <div class="w-full h-full relative flex items-center justify-center">
+              <span class="absolute w-2.5 h-2.5 rounded-full bg-snex-blue -top-0.5 -left-0.5 shadow-sm"></span>
+              <span class="absolute w-2.5 h-2.5 rounded-full bg-snex-orange -top-0.5 -right-0.5 shadow-sm"></span>
+              <span class="absolute w-2.5 h-2.5 rounded-full bg-snex-green -bottom-0.5 left-2 shadow-sm"></span>
+              <span class="font-display font-extrabold text-white text-base tracking-tighter">S_N</span>
+            </div>
+          </div>
+          <div>
+            <div class="font-display font-extrabold text-xl tracking-wider text-white flex items-center">
+              S_NEX <span class="text-snex-orange text-xs uppercase tracking-widest font-semibold ml-1.5 px-1.5 py-0.5 bg-white/10 rounded border border-white/10">SARL</span>
+            </div>
+            <div class="text-[10px] tracking-wider text-slate-300 uppercase font-medium">
+              Télécom <span class="text-snex-blue">•</span> Énergie <span class="text-snex-orange">•</span> Solaire
+            </div>
+          </div>
+        </a>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden lg:flex items-center space-x-1 text-sm font-medium">
+          <a href="#accueil" class="nav-link px-3 py-2 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition">Accueil</a>
+          <a href="#telecom" class="nav-link px-3 py-2 rounded-lg text-slate-200 hover:text-snex-blue hover:bg-white/10 transition">Télécoms</a>
+          <a href="#energie" class="nav-link px-3 py-2 rounded-lg text-slate-200 hover:text-snex-orange hover:bg-white/10 transition">Énergie</a>
+          <a href="#solaire" class="nav-link px-3 py-2 rounded-lg text-slate-200 hover:text-snex-green hover:bg-white/10 transition">Photovoltaïque</a>
+          <a href="#apropos" class="nav-link px-3 py-2 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition">À Propos</a>
+          <a href="#realisations" class="nav-link px-3 py-2 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition">Réalisations</a>
+          <a href="#carrieres" class="nav-link px-3 py-2 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition">Carrières</a>
+          <a href="#contact" class="nav-link px-3 py-2 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition">Contact</a>
+        </nav>
+
+        <!-- CTAs -->
+        <div class="hidden sm:flex items-center space-x-3">
+          <a href="https://wa.me/2250700000000?text=Bonjour%20S_NEX%20SARL,%20je%20souhaite%20des%20informations" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-emerald-600/20 text-emerald-400 border border-emerald-500/40 hover:bg-emerald-600 hover:text-white transition flex items-center justify-center" title="WhatsApp Direct">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          </a>
+          <button type="button" id="openDevisBtnNav" class="bg-gradient-to-r from-snex-orange to-amber-500 hover:from-snex-orangeLight hover:to-amber-400 text-white font-semibold text-sm px-5 py-2.5 rounded-xl shadow-lg shadow-snex-orange/20 transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center space-x-2">
+            <span>Demander un devis</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </button>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button type="button" id="mobileMenuBtn" aria-label="Menu principal" class="lg:hidden p-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/10 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-snex-navy/98 border-t border-white/10 px-4 pt-3 pb-6 space-y-2">
+      <a href="#accueil" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-medium text-slate-200 hover:bg-white/10">Accueil</a>
+      <a href="#telecom" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-medium text-slate-200 hover:bg-white/10">Télécommunications</a>
+      <a href="#energie" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-medium text-slate-200 hover:bg-white/10">Énergie & Groupes</a>
+      <a href="#solaire" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-medium text-slate-200 hover:bg-white/10">Photovoltaïque</a>
+      <a href="#apropos" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-medium text-slate-200 hover:bg-white/10">À Propos & Afrique de l'Ouest</a>
+      <a href="#realisations" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-medium text-slate-200 hover:bg-white/10">Nos Réalisations</a>
+      <a href="#carrieres" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-medium text-slate-200 hover:bg-white/10">Espace Carrière</a>
+      <a href="#contact" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-medium text-slate-200 hover:bg-white/10">Contact & Plan d'accès</a>
+      <div class="pt-4 border-t border-white/10 flex flex-col space-y-3">
+        <button type="button" id="openDevisBtnMobile" class="w-full text-center bg-snex-orange text-white font-semibold py-3 rounded-xl shadow-md">
+          Demander un devis en ligne
+        </button>
+        <a href="https://wa.me/2250700000000?text=Bonjour%20S_NEX%20SARL" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-emerald-600 text-white font-semibold py-2.5 rounded-xl flex items-center justify-center space-x-2">
+          <span>Échanger sur WhatsApp (+225)</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION 1 : HERO SECTION -->
+  <section id="accueil" class="relative bg-snex-navy text-white overflow-hidden min-h-[90vh] flex items-center">
+    <!-- Background Image with Overlay -->
+    <div class="absolute inset-0 z-0">
+      <img src="assets/images/watermarked_img_5420676125577618718.jpg" alt="Infrastructures Télécoms et Solaire S_NEX SARL" class="w-full h-full object-cover object-center opacity-30">
+      <div class="absolute inset-0 bg-gradient-to-r from-snex-navy via-snex-navy/90 to-transparent"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-snex-navy via-transparent to-transparent"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-8 space-y-8">
+          <!-- Badges -->
+          <div class="flex flex-wrap items-center gap-2.5">
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-snex-blue/20 text-sky-300 border border-snex-blue/30">
+              <span class="w-2 h-2 rounded-full bg-sky-400 mr-2 animate-pulse"></span>
+              Abidjan – Port-Bouët Gonzagueville
+            </span>
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-snex-orange/20 text-orange-300 border border-snex-orange/30">
+              Rayonnement Afrique de l'Ouest
+            </span>
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+              Certifications & Qualité B2B
+            </span>
+          </div>
+
+          <!-- Official Slogan & Headline -->
+          <div class="space-y-4">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-extrabold tracking-tight leading-tight">
+              « Connecter aujourd’hui, <br>
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-snex-orange via-amber-400 to-snex-green">
+                alimenter demain »
+              </span>
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-300 max-w-2xl font-light leading-relaxed">
+              Partenaire stratégique de référence en <strong class="text-white font-semibold">Télécommunications</strong>, 
+              <strong class="text-white font-semibold">Sécurisation Énergétique</strong> et 
+              <strong class="text-white font-semibold">Centrales Solaires Photovoltaïques</strong> pour les opérateurs, industries et institutions en Côte d’Ivoire et dans la sous-région.
+            </p>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row gap-4 pt-2">
+            <button type="button" id="openDevisBtnHero" class="px-8 py-4 bg-gradient-to-r from-snex-orange to-amber-500 hover:from-snex-orangeLight hover:to-amber-400 text-white font-bold rounded-xl shadow-xl shadow-snex-orange/25 transition transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center space-x-3 text-base">
+              <span>Demander un devis ou une étude</span>
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+            </button>
+            <a href="#services" class="px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-xl border border-white/20 backdrop-blur-sm transition flex items-center justify-center space-x-2 text-base">
+              <span>Découvrir nos services</span>
+              <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </a>
+          </div>
+
+          <!-- Key Metrics -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-white/10">
+            <div class="p-3 bg-white/5 rounded-xl border border-white/10">
+              <div class="text-2xl sm:text-3xl font-display font-extrabold text-snex-blue">+180</div>
+              <div class="text-xs text-slate-300 font-medium">Sites télécoms déployés</div>
+            </div>
+            <div class="p-3 bg-white/5 rounded-xl border border-white/10">
+              <div class="text-2xl sm:text-3xl font-display font-extrabold text-snex-orange">99.8%</div>
+              <div class="text-xs text-slate-300 font-medium">Disponibilité énergie</div>
+            </div>
+            <div class="p-3 bg-white/5 rounded-xl border border-white/10">
+              <div class="text-2xl sm:text-3xl font-display font-extrabold text-snex-green">+6.5 MWc</div>
+              <div class="text-xs text-slate-300 font-medium">Capacité solaire installée</div>
+            </div>
+            <div class="p-3 bg-white/5 rounded-xl border border-white/10">
+              <div class="text-2xl sm:text-3xl font-display font-extrabold text-amber-400">7 Pays</div>
+              <div class="text-xs text-slate-300 font-medium">Cibles sous-région Ouest</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar highlights card preview -->
+        <div class="lg:col-span-4 hidden lg:block">
+          <div class="bg-slate-900/80 backdrop-blur-md p-6 rounded-2xl border border-white/15 space-y-4 shadow-2xl">
+            <div class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Excellence opérationnelle</div>
+            <h2 class="text-lg font-bold text-white">Nos 3 pôles d’intervention B2B</h2>
+            
+            <a href="#telecom" class="block p-3.5 rounded-xl bg-blue-950/50 border border-blue-500/30 hover:border-blue-400 transition group">
+              <div class="flex items-center justify-between">
+                <span class="font-semibold text-blue-300 group-hover:text-blue-200">1. Télécommunications</span>
+                <span class="text-xs px-2 py-0.5 rounded bg-blue-500/20 text-blue-300">24/7</span>
+              </div>
+              <p class="text-xs text-slate-400 mt-1">Pylônes, fibre optique, ingénierie radio & supervision réseau.</p>
+            </a>
+
+            <a href="#energie" class="block p-3.5 rounded-xl bg-orange-950/40 border border-orange-500/30 hover:border-orange-400 transition group">
+              <div class="flex items-center justify-between">
+                <span class="font-semibold text-orange-300 group-hover:text-orange-200">2. Énergie Industrielle</span>
+                <span class="text-xs px-2 py-0.5 rounded bg-orange-500/20 text-orange-300">Critique</span>
+              </div>
+              <p class="text-xs text-slate-400 mt-1">Groupes électrogènes, postes MT/BT, onduleurs et sécurisation.</p>
+            </a>
+
+            <a href="#solaire" class="block p-3.5 rounded-xl bg-emerald-950/40 border border-emerald-500/30 hover:border-emerald-400 transition group">
+              <div class="flex items-center justify-between">
+                <span class="font-semibold text-emerald-300 group-hover:text-emerald-200">3. Photovoltaïque</span>
+                <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300">Durable</span>
+              </div>
+              <p class="text-xs text-slate-400 mt-1">Centrales toiture, hybridation solaire, kits B2B et maintenance.</p>
+            </a>
+
+            <div class="pt-2 text-center">
+              <button type="button" id="openDevisBtnSidebar" class="w-full text-xs font-semibold py-2.5 px-4 bg-white/10 hover:bg-white/20 text-slate-200 hover:text-white rounded-lg border border-white/10 transition">
+                Démarrer une étude de faisabilité →
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2 : PRÉSENTATION DE L'ENTREPRISE & ATOUTS -->
+  <section id="services" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center space-x-2 text-snex-blue text-xs font-bold uppercase tracking-wider">
+            <span class="w-8 h-0.5 bg-snex-blue"></span>
+            <span>Présentation institutionnelle</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-slate-900 tracking-tight leading-tight">
+            Un acteur ivoirien d'envergure internationale au service de la continuité d'activité
+          </h2>
+          <p class="text-slate-600 leading-relaxed">
+            Implantée à <strong>Abidjan</strong> dans la commune de <strong>Port-Bouët (quartier Gonzagueville)</strong>, 
+            <strong>S_NEX SARL</strong> est une société d'ingénierie et de services techniques dédiée aux infrastructures critiques.
+          </p>
+          <p class="text-slate-600 leading-relaxed">
+            Dans un environnement où la connectivité et la fiabilité énergétique conditionnent la compétitivité des entreprises et le développement socio-économique, nous apportons des solutions intégrées clés en main : du dimensionnement rigoureux à l'exploitation continue 24/7 sur le terrain.
+          </p>
+
+          <!-- Atouts de S_NEX SARL (Section 4.1 du Cahier des charges) -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+            <div class="flex items-start space-x-3 p-3.5 rounded-xl bg-slate-50 border border-slate-100">
+              <div class="w-8 h-8 rounded-lg bg-snex-blue/10 text-snex-blue flex items-center justify-center shrink-0">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-800 text-sm">Expertise Technique</h3>
+                <p class="text-xs text-slate-500 mt-0.5">Ingénieurs certifiés et conformité aux standards internationaux.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-3 p-3.5 rounded-xl bg-slate-50 border border-slate-100">
+              <div class="w-8 h-8 rounded-lg bg-snex-orange/10 text-snex-orange flex items-center justify-center shrink-0">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-800 text-sm">Réactivité & Astreinte 24/7</h3>
+                <p class="text-xs text-slate-500 mt-0.5">Équipes d'intervention rapide mobilisables immédiatement.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-3 p-3.5 rounded-xl bg-slate-50 border border-slate-100">
+              <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-800 text-sm">Qualité & Sécurité (HSE)</h3>
+                <p class="text-xs text-slate-500 mt-0.5">Protocoles stricts de sécurité au travail et respect des normes.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-3 p-3.5 rounded-xl bg-slate-50 border border-slate-100">
+              <div class="w-8 h-8 rounded-lg bg-indigo-100 text-indigo-600 flex items-center justify-center shrink-0">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-800 text-sm">Accompagnement Dédié</h3>
+                <p class="text-xs text-slate-500 mt-0.5">Interlocuteur unique et suivi personnalisé de chaque projet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual representation -->
+        <div class="lg:col-span-6 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none rounded-2xl overflow-hidden shadow-2xl border border-slate-200">
+            <img src="assets/images/watermarked_img_13807670121670765509.jpg" alt="Équipe technique S_NEX SARL sur site" class="w-full h-[420px] object-cover">
+            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-snex-navy via-snex-navy/80 to-transparent p-6 text-white">
+              <div class="flex items-center space-x-2 text-amber-400 text-xs font-semibold uppercase tracking-wider mb-1">
+                <span>Engagement Terrain</span>
+              </div>
+              <h3 class="text-lg font-bold">Techniciens & Ingénieurs hautement qualifiés</h3>
+              <p class="text-xs text-slate-300 mt-1">Intervention sur site, maintenance préventive et corrective avec outillage certifié.</p>
+            </div>
+          </div>
+          <!-- Decorative accent -->
+          <div class="absolute -top-4 -right-4 w-24 h-24 bg-snex-orange/10 rounded-full blur-2xl -z-10"></div>
+          <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-snex-blue/10 rounded-full blur-2xl -z-10"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3 : LES TROIS PÔLES D'ACTIVITÉ STRATÉGIQUES -->
+
+  <!-- PÔLE 1 : TÉLÉCOMMUNICATIONS (BLEU) -->
+  <section id="telecom" class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-12">
+        <div class="space-y-3 max-w-2xl">
+          <div class="inline-flex items-center space-x-2 text-snex-blue text-xs font-bold uppercase tracking-wider">
+            <span class="w-3 h-3 rounded-full bg-snex-blue"></span>
+            <span>Pôle d'activité 01 • Couleur institutionnelle : Bleu</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-slate-900 tracking-tight">
+            Télécommunications & Ingénierie Réseau
+          </h2>
+          <p class="text-slate-600">
+            Installation, exploitation et maintenance intégrale d'infrastructures télécoms passives et actives pour opérateurs et gestionnaires de tours (TowerCos).
+          </p>
+        </div>
+        <div class="mt-4 lg:mt-0">
+          <button type="button" class="open-devis-with-cat bg-snex-navy hover:bg-snex-blue text-white text-xs font-bold px-5 py-2.5 rounded-lg transition" data-category="Télécommunications">
+            Devis Pôle Télécom →
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-5 rounded-2xl overflow-hidden shadow-lg border border-slate-200">
+          <img src="assets/images/watermarked_img_13807670121670765509.jpg" alt="Télécom S_NEX SARL" class="w-full h-80 object-cover">
+          <div class="p-6 bg-white space-y-4">
+            <div class="flex items-center justify-between text-xs font-semibold text-slate-500">
+              <span>Disponibilité SLA réseau</span>
+              <span class="text-snex-blue font-bold text-sm">99.9%</span>
+            </div>
+            <div class="w-full bg-slate-100 rounded-full h-2">
+              <div class="bg-snex-blue h-2 rounded-full w-[99.9%]"></div>
+            </div>
+            <p class="text-xs text-slate-500 italic">
+              « Déploiement et sécurisation de liaisons hertziennes, fibre optique et shelters avec surveillance continue. »
+            </p>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <!-- Item 1 -->
+          <div class="p-5 bg-white rounded-xl border border-slate-200 hover:border-snex-blue/50 hover:shadow-md transition">
+            <div class="w-9 h-9 rounded-lg bg-blue-50 text-snex-blue flex items-center justify-center mb-3">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+            </div>
+            <h3 class="font-bold text-slate-800 text-sm mb-1">Infrastructures & Pylônes</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Génie civil, montage de pylônes (haubanés, autoportants), pose de shelters, sécurisation périmétrique et mise à la terre.
+            </p>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="p-5 bg-white rounded-xl border border-slate-200 hover:border-snex-blue/50 hover:shadow-md transition">
+            <div class="w-9 h-9 rounded-lg bg-blue-50 text-snex-blue flex items-center justify-center mb-3">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"></path></svg>
+            </div>
+            <h3 class="font-bold text-slate-800 text-sm mb-1">Ingénierie Réseau & Radio</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Installation d'antennes 4G/5G, baies BBU/RRU, faisceaux hertziens (FH), raccordement fibre optique et tests de réflectométrie (OTDR).
+            </p>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="p-5 bg-white rounded-xl border border-slate-200 hover:border-snex-blue/50 hover:shadow-md transition">
+            <div class="w-9 h-9 rounded-lg bg-blue-50 text-snex-blue flex items-center justify-center mb-3">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+            </div>
+            <h3 class="font-bold text-slate-800 text-sm mb-1">Exploitation & Supervision 24/7</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Monitoring NOC, gestion des alarmes de télégestion, supervision d'accès aux sites et reporting de performance en temps réel.
+            </p>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="p-5 bg-white rounded-xl border border-slate-200 hover:border-snex-blue/50 hover:shadow-md transition">
+            <div class="w-9 h-9 rounded-lg bg-blue-50 text-snex-blue flex items-center justify-center mb-3">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            <h3 class="font-bold text-slate-800 text-sm mb-1">Maintenance Préventive & Curative</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Visites périodiques, nettoyage de têtes HF, vérification des haubans, maintenance curative d'urgence avec engagement de rétablissement (SLA).
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PÔLE 2 : ÉNERGIE (ORANGE) -->
+  <section id="energie" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-12">
+        <div class="space-y-3 max-w-2xl">
+          <div class="inline-flex items-center space-x-2 text-snex-orange text-xs font-bold uppercase tracking-wider">
+            <span class="w-3 h-3 rounded-full bg-snex-orange"></span>
+            <span>Pôle d'activité 02 • Couleur institutionnelle : Orange</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-slate-900 tracking-tight">
+            Énergie Industrielle & Groupes Électrogènes
+          </h2>
+          <p class="text-slate-600">
+            Sécurisation de l'alimentation électrique pour data centers, usines, hôpitaux, banques et sites industriels critiques en Afrique de l'Ouest.
+          </p>
+        </div>
+        <div class="mt-4 lg:mt-0">
+          <button type="button" class="open-devis-with-cat bg-snex-orange hover:bg-orange-600 text-white text-xs font-bold px-5 py-2.5 rounded-lg transition" data-category="Énergie">
+            Devis Pôle Énergie →
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4 order-2 lg:order-1">
+          <!-- Item 1 -->
+          <div class="p-5 bg-slate-50 rounded-xl border border-slate-200 hover:border-snex-orange/50 hover:shadow-md transition">
+            <div class="w-9 h-9 rounded-lg bg-orange-100 text-snex-orange flex items-center justify-center mb-3">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            </div>
+            <h3 class="font-bold text-slate-800 text-sm mb-1">Groupes Électrogènes & Centrales</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Fourniture, installation et raccordement de groupes électrogènes diesel/gaz (10 kVA à 2500 kVA), inverseurs automatiques (ATS) et cuves de carburant.
+            </p>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="p-5 bg-slate-50 rounded-xl border border-slate-200 hover:border-snex-orange/50 hover:shadow-md transition">
+            <div class="w-9 h-9 rounded-lg bg-orange-100 text-snex-orange flex items-center justify-center mb-3">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+            </div>
+            <h3 class="font-bold text-slate-800 text-sm mb-1">Installations Électriques MT / BT</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Postes de transformation Moyenne Tension, tableaux généraux basse tension (TGBT), chemins de câbles et compensation d'énergie réactive.
+            </p>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="p-5 bg-slate-50 rounded-xl border border-slate-200 hover:border-snex-orange/50 hover:shadow-md transition">
+            <div class="w-9 h-9 rounded-lg bg-orange-100 text-snex-orange flex items-center justify-center mb-3">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            <h3 class="font-bold text-slate-800 text-sm mb-1">Alimentation Sans Interruption (UPS)</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Onduleurs modulaires, redresseurs télécom 48V, bancs de batteries plomb étanche / lithium LiFePO4 pour serveurs et charges critiques.
+            </p>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="p-5 bg-slate-50 rounded-xl border border-slate-200 hover:border-snex-orange/50 hover:shadow-md transition">
+            <div class="w-9 h-9 rounded-lg bg-orange-100 text-snex-orange flex items-center justify-center mb-3">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+            </div>
+            <h3 class="font-bold text-slate-800 text-sm mb-1">Contrats de Maintenance Multi-sites</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Gestion de parcs de groupes électrogènes, vidanges, analyses d'huile, approvisionnement carburant sécurisé et astreinte technique continue.
+            </p>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 rounded-2xl overflow-hidden shadow-lg border border-slate-200 order-1 lg:order-2">
+          <img src="assets/images/watermarked_img_13151724932830594196.jpg" alt="Centrale électrique et groupes électrogènes S_NEX SARL" class="w-full h-80 object-cover">
+          <div class="p-6 bg-slate-900 text-white space-y-4">
+            <div class="flex items-center justify-between text-xs font-semibold text-slate-300">
+              <span>Disponibilité Énergétique Garantie</span>
+              <span class="text-snex-orange font-bold text-sm">99.8%</span>
+            </div>
+            <div class="w-full bg-slate-800 rounded-full h-2">
+              <div class="bg-snex-orange h-2 rounded-full w-[99.8%]"></div>
+            </div>
+            <p class="text-xs text-slate-300 italic">
+              « Zéro rupture d'alimentation sur les sites stratégiques grâce à nos basculements automatisés et notre maintenance préventive. »
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PÔLE 3 : PHOTOVOLTAÏQUE (VERT) -->
+  <section id="solaire" class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-12">
+        <div class="space-y-3 max-w-2xl">
+          <div class="inline-flex items-center space-x-2 text-snex-green text-xs font-bold uppercase tracking-wider">
+            <span class="w-3 h-3 rounded-full bg-snex-green"></span>
+            <span>Pôle d'activité 03 • Couleur institutionnelle : Vert</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-slate-900 tracking-tight">
+            Énergie Solaire Photovoltaïque
+          </h2>
+          <p class="text-slate-600">
+            Études d'ingénierie, dimensionnement certifié, fourniture et installation de centrales solaires pour l'autonomie et la décarbonation.
+          </p>
+        </div>
+        <div class="mt-4 lg:mt-0">
+          <button type="button" class="open-devis-with-cat bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-5 py-2.5 rounded-lg transition" data-category="Photovoltaïque">
+            Devis Pôle Solaire →
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-5 rounded-2xl overflow-hidden shadow-lg border border-slate-200">
+          <img src="assets/images/watermarked_img_12076277715078788864.jpg" alt="Centrale solaire toiture industrielle S_NEX SARL" class="w-full h-80 object-cover">
+          <div class="p-6 bg-white space-y-4">
+            <div class="flex items-center justify-between text-xs font-semibold text-slate-500">
+              <span>Économie sur facture électrique</span>
+              <span class="text-emerald-600 font-bold text-sm">-40% à -70%</span>
+            </div>
+            <div class="w-full bg-slate-100 rounded-full h-2">
+              <div class="bg-emerald-500 h-2 rounded-full w-[75%]"></div>
+            </div>
+            <p class="text-xs text-slate-500 italic">
+              « Rentabilisez vos toitures et sécurisez votre approvisionnement grâce à l'énergie solaire tropicale abondante. »
+            </p>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <!-- Item 1 -->
+          <div class="p-5 bg-white rounded-xl border border-slate-200 hover:border-snex-green/50 hover:shadow-md transition">
+            <div class="w-9 h-9 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+            </div>
+            <h3 class="font-bold text-slate-800 text-sm mb-1">Études & Dimensionnement</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Audits de gisement solaire, simulations PVsyst, études de rentabilité (ROI), dimensionnement technique sur mesure (On-Grid, Off-Grid, Hybride).
+            </p>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="p-5 bg-white rounded-xl border border-slate-200 hover:border-snex-green/50 hover:shadow-md transition">
+            <div class="w-9 h-9 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+            </div>
+            <h3 class="font-bold text-slate-800 text-sm mb-1">Centrales Industrielles & Tertiaires</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Installations toitures d'usines, ombrières de parking solaires, systèmes hybrides solaire-diesel pour réduire massivement la consommation de carburant.
+            </p>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="p-5 bg-white rounded-xl border border-slate-200 hover:border-snex-green/50 hover:shadow-md transition">
+            <div class="w-9 h-9 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+            </div>
+            <h3 class="font-bold text-slate-800 text-sm mb-1">Kits d'Autonomie & Résidentiel VIP</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Solutions complètes clés en main pour villas, résidences et PME : panneaux monocristallins Tier-1, onduleurs hybrides intelligents et batteries lithium.
+            </p>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="p-5 bg-white rounded-xl border border-slate-200 hover:border-snex-green/50 hover:shadow-md transition">
+            <div class="w-9 h-9 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+            </div>
+            <h3 class="font-bold text-slate-800 text-sm mb-1">Maintenance & Monitoring à Distance</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Nettoyage spécialisé des modules, thermographie infrarouge par drone, supervision connectée de production et remplacement de composants.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4 : À PROPOS & VISION SOUS-RÉGIONALE (CARTE INTERACTIVE AFRIQUE DE L'OUEST) -->
+  <section id="apropos" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <div class="inline-flex items-center space-x-2 text-snex-blue text-xs font-bold uppercase tracking-wider">
+          <span class="w-8 h-0.5 bg-snex-blue"></span>
+          <span>Ambition & Ancrage Territorial</span>
+          <span class="w-8 h-0.5 bg-snex-blue"></span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-slate-900 tracking-tight">
+          De Port-Bouët à l'Afrique de l'Ouest : Notre Vision Régionale
+        </h2>
+        <p class="text-slate-600 leading-relaxed">
+          Née en Côte d'Ivoire avec un ancrage solide à Abidjan (Gonzagueville), <strong>S_NEX SARL</strong> déploie une stratégie d'expansion méthodique pour répondre aux défis d'électrification et de connectivité de 7 pays de l'espace UEMOA et CEDEAO.
+        </p>
+      </div>
+
+      <!-- CARTE INTERACTIVE & HUBS -->
+      <div class="bg-slate-900 text-white rounded-3xl p-6 sm:p-10 border border-slate-800 shadow-2xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Interactive SVG Map / Nodes representation -->
+          <div class="lg:col-span-7 bg-slate-950/70 rounded-2xl p-6 border border-white/10 relative">
+            <div class="flex items-center justify-between mb-4 pb-2 border-b border-white/10">
+              <span class="text-xs uppercase font-semibold text-slate-400">Cartographie interactive sous-régionale</span>
+              <span class="text-xs text-emerald-400 flex items-center space-x-1">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>7 Pays cibles</span>
+              </span>
+            </div>
+
+            <!-- Stylized Map Area -->
+            <div class="relative w-full h-80 sm:h-96 flex items-center justify-center overflow-hidden">
+              <svg viewBox="0 0 700 480" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                <!-- Connection Lines linking Abidjan HQ to other regional capitals -->
+                <line x1="280" y1="360" x2="120" y2="180" stroke="#0284C7" stroke-width="2" stroke-dasharray="4,4" opacity="0.6"/>
+                <line x1="280" y1="360" x2="250" y2="200" stroke="#EA580C" stroke-width="2" stroke-dasharray="4,4" opacity="0.6"/>
+                <line x1="280" y1="360" x2="350" y2="220" stroke="#16A34A" stroke-width="2" stroke-dasharray="4,4" opacity="0.6"/>
+                <line x1="280" y1="360" x2="380" y2="340" stroke="#0284C7" stroke-width="2" stroke-dasharray="4,4" opacity="0.6"/>
+                <line x1="280" y1="360" x2="440" y2="330" stroke="#EA580C" stroke-width="2" stroke-dasharray="4,4" opacity="0.6"/>
+                <line x1="280" y1="360" x2="490" y2="320" stroke="#16A34A" stroke-width="2" stroke-dasharray="4,4" opacity="0.6"/>
+
+                <!-- Country Node: CÔTE D'IVOIRE (HQ) -->
+                <g class="country-node" data-country="ci">
+                  <circle cx="280" cy="360" r="28" fill="#0B2046" stroke="#EA580C" stroke-width="4"/>
+                  <circle cx="280" cy="360" r="12" fill="#0284C7"/>
+                  <text x="280" y="405" text-anchor="middle" fill="#FFFFFF" font-size="12" font-weight="bold">Côte d'Ivoire (HQ)</text>
+                  <text x="280" y="420" text-anchor="middle" fill="#EA580C" font-size="10">Abidjan - Port-Bouët</text>
+                </g>
+
+                <!-- Country Node: SÉNÉGAL -->
+                <g class="country-node" data-country="sn">
+                  <circle cx="120" cy="180" r="18" fill="#1E293B" stroke="#0284C7" stroke-width="2"/>
+                  <circle cx="120" cy="180" r="8" fill="#38BDF8"/>
+                  <text x="120" y="152" text-anchor="middle" fill="#E2E8F0" font-size="11" font-weight="600">Sénégal</text>
+                  <text x="120" y="165" text-anchor="middle" fill="#94A3B8" font-size="9">Dakar</text>
+                </g>
+
+                <!-- Country Node: MALI -->
+                <g class="country-node" data-country="ml">
+                  <circle cx="250" cy="200" r="18" fill="#1E293B" stroke="#EA580C" stroke-width="2"/>
+                  <circle cx="250" cy="200" r="8" fill="#FB923C"/>
+                  <text x="250" y="172" text-anchor="middle" fill="#E2E8F0" font-size="11" font-weight="600">Mali</text>
+                  <text x="250" y="185" text-anchor="middle" fill="#94A3B8" font-size="9">Bamako</text>
+                </g>
+
+                <!-- Country Node: BURKINA FASO -->
+                <g class="country-node" data-country="bf">
+                  <circle cx="350" cy="220" r="18" fill="#1E293B" stroke="#16A34A" stroke-width="2"/>
+                  <circle cx="350" cy="220" r="8" fill="#4ADE80"/>
+                  <text x="350" y="192" text-anchor="middle" fill="#E2E8F0" font-size="11" font-weight="600">Burkina Faso</text>
+                  <text x="350" y="205" text-anchor="middle" fill="#94A3B8" font-size="9">Ouagadougou</text>
+                </g>
+
+                <!-- Country Node: GHANA -->
+                <g class="country-node" data-country="gh">
+                  <circle cx="380" cy="340" r="18" fill="#1E293B" stroke="#0284C7" stroke-width="2"/>
+                  <circle cx="380" cy="340" r="8" fill="#38BDF8"/>
+                  <text x="380" y="375" text-anchor="middle" fill="#E2E8F0" font-size="11" font-weight="600">Ghana</text>
+                  <text x="380" y="388" text-anchor="middle" fill="#94A3B8" font-size="9">Accra</text>
+                </g>
+
+                <!-- Country Node: TOGO -->
+                <g class="country-node" data-country="tg">
+                  <circle cx="440" cy="330" r="16" fill="#1E293B" stroke="#EA580C" stroke-width="2"/>
+                  <circle cx="440" cy="330" r="7" fill="#FB923C"/>
+                  <text x="440" y="310" text-anchor="middle" fill="#E2E8F0" font-size="11" font-weight="600">Togo</text>
+                  <text x="440" y="360" text-anchor="middle" fill="#94A3B8" font-size="9">Lomé</text>
+                </g>
+
+                <!-- Country Node: BÉNIN -->
+                <g class="country-node" data-country="bj">
+                  <circle cx="490" cy="320" r="16" fill="#1E293B" stroke="#16A34A" stroke-width="2"/>
+                  <circle cx="490" cy="320" r="7" fill="#4ADE80"/>
+                  <text x="490" y="300" text-anchor="middle" fill="#E2E8F0" font-size="11" font-weight="600">Bénin</text>
+                  <text x="490" y="350" text-anchor="middle" fill="#94A3B8" font-size="9">Cotonou</text>
+                </g>
+              </svg>
+            </div>
+            <p class="text-[11px] text-center text-slate-400 mt-2">
+              Cliquez sur un pays sur la carte ou dans la liste pour voir les opérations et projets associés.
+            </p>
+          </div>
+
+          <!-- Dynamic Info Box based on selected country -->
+          <div class="lg:col-span-5 space-y-4">
+            <div id="countryInfoCard" class="bg-slate-800/90 rounded-2xl p-6 border border-slate-700 transition-all">
+              <div class="flex items-center justify-between mb-3">
+                <span id="countryBadge" class="px-2.5 py-1 rounded text-xs font-bold bg-snex-orange text-white">
+                  Siège Social & Hub Principal
+                </span>
+                <span id="countryStatus" class="text-xs text-slate-400">Opérationnel 24/7</span>
+              </div>
+              <h3 id="countryName" class="text-2xl font-bold text-white mb-2">Côte d’Ivoire</h3>
+              <p id="countryDesc" class="text-xs text-slate-300 leading-relaxed mb-4">
+                Base opérationnelle et siège social de S_NEX SARL à Abidjan (Port-Bouët, Gonzagueville). Gestion complète du réseau national, ateliers électromécaniques, stock de pièces détachées et déploiement sous-régional.
+              </p>
+              
+              <div class="space-y-2 border-t border-slate-700 pt-3 text-xs">
+                <div class="flex justify-between">
+                  <span class="text-slate-400">Centre d'ingénierie :</span>
+                  <span id="countryHub" class="font-semibold text-white">Abidjan (Port-Bouët)</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-slate-400">Pôles actifs :</span>
+                  <span id="countryPoles" class="font-semibold text-amber-400">Télécom • Énergie • Solaire</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-slate-400">Astreinte & Hotline :</span>
+                  <span class="font-semibold text-emerald-400">+225 27 21 58 40 10</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Country selection buttons -->
+            <div class="grid grid-cols-4 gap-2 pt-2">
+              <button type="button" class="country-btn active px-2 py-2 text-xs font-semibold rounded-lg bg-snex-blue text-white border border-snex-blue" data-country="ci">CI (HQ)</button>
+              <button type="button" class="country-btn px-2 py-2 text-xs font-semibold rounded-lg bg-slate-800 text-slate-300 border border-slate-700 hover:bg-slate-700" data-country="sn">Sénégal</button>
+              <button type="button" class="country-btn px-2 py-2 text-xs font-semibold rounded-lg bg-slate-800 text-slate-300 border border-slate-700 hover:bg-slate-700" data-country="ml">Mali</button>
+              <button type="button" class="country-btn px-2 py-2 text-xs font-semibold rounded-lg bg-slate-800 text-slate-300 border border-slate-700 hover:bg-slate-700" data-country="bf">Burkina</button>
+              <button type="button" class="country-btn px-2 py-2 text-xs font-semibold rounded-lg bg-slate-800 text-slate-300 border border-slate-700 hover:bg-slate-700" data-country="gh">Ghana</button>
+              <button type="button" class="country-btn px-2 py-2 text-xs font-semibold rounded-lg bg-slate-800 text-slate-300 border border-slate-700 hover:bg-slate-700" data-country="tg">Togo</button>
+              <button type="button" class="country-btn px-2 py-2 text-xs font-semibold rounded-lg bg-slate-800 text-slate-300 border border-slate-700 hover:bg-slate-700" data-country="bj">Bénin</button>
+              <button type="button" id="openDevisBtnMap" class="px-2 py-2 text-xs font-bold rounded-lg bg-snex-orange text-white hover:bg-orange-600">Devis Région</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5 : NOS RÉALISATIONS (GALERIE & PROJETS AVEC FILTRES) -->
+  <section id="realisations" class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div class="space-y-3 max-w-2xl">
+          <div class="inline-flex items-center space-x-2 text-snex-blue text-xs font-bold uppercase tracking-wider">
+            <span class="w-8 h-0.5 bg-snex-blue"></span>
+            <span>Références & Projets Récents</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-slate-900 tracking-tight">
+            Des Réalisations Concrètes à Fort Impact
+          </h2>
+          <p class="text-slate-600">
+            Découvrez nos interventions récentes en Côte d’Ivoire et dans la sous-région pour les opérateurs télécoms, industries et institutions.
+          </p>
+        </div>
+
+        <!-- Filter tabs -->
+        <div class="flex flex-wrap gap-2 mt-6 md:mt-0" id="projectFilters">
+          <button type="button" class="filter-btn active px-4 py-2 rounded-xl text-xs font-bold bg-snex-navy text-white shadow-sm transition" data-filter="all">Tous les projets</button>
+          <button type="button" class="filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-600 border border-slate-200 hover:bg-slate-100 transition" data-filter="telecom">Télécommunications</button>
+          <button type="button" class="filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-600 border border-slate-200 hover:bg-slate-100 transition" data-filter="energie">Énergie</button>
+          <button type="button" class="filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-600 border border-slate-200 hover:bg-slate-100 transition" data-filter="solaire">Photovoltaïque</button>
+        </div>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projectsGrid">
+        
+        <!-- Project 1 (Solaire) -->
+        <div class="project-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300" data-cat="solaire">
+          <div class="relative h-52 overflow-hidden">
+            <img src="assets/images/watermarked_img_12076277715078788864.jpg" alt="Centrale solaire 350 kWc Abidjan" class="w-full h-full object-cover transform hover:scale-105 transition duration-500">
+            <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-bold bg-emerald-600 text-white shadow">
+              Photovoltaïque
+            </span>
+            <span class="absolute bottom-3 right-3 px-2.5 py-0.5 rounded text-[11px] font-semibold bg-slate-900/80 text-white backdrop-blur-sm">
+              Abidjan, Zone Vridi
+            </span>
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="font-bold text-slate-900 text-lg">Centrale solaire toiture industrielle 350 kWc</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Étude d'ingénierie, dimensionnement PVsyst, pose de 780 modules monocristallins et monitoring en temps réel pour un complexe logistique.
+            </p>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+              <span class="text-slate-500">Économie annuelle : <strong class="text-emerald-600 font-bold">52 M FCFA</strong></span>
+              <button type="button" class="view-project-details font-bold text-snex-blue hover:text-snex-blueDark" data-id="p1">Détails →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 (Télécom) -->
+        <div class="project-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300" data-cat="telecom">
+          <div class="relative h-52 overflow-hidden">
+            <img src="assets/images/watermarked_img_13807670121670765509.jpg" alt="Maintenance 120 sites télécoms" class="w-full h-full object-cover transform hover:scale-105 transition duration-500">
+            <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-bold bg-snex-blue text-white shadow">
+              Télécommunications
+            </span>
+            <span class="absolute bottom-3 right-3 px-2.5 py-0.5 rounded text-[11px] font-semibold bg-slate-900/80 text-white backdrop-blur-sm">
+              Côte d’Ivoire & Frontières
+            </span>
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="font-bold text-slate-900 text-lg">Maintenance préventive & corrective de 120 sites</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Supervision continue 24/7, inspection des pylônes haubanés, sécurisation des baies d'énergie et maintien du SLA de disponibilité réseau à 99.9%.
+            </p>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+              <span class="text-slate-500">Taux de résolution SLA : <strong class="text-blue-600 font-bold">&lt; 2 heures</strong></span>
+              <button type="button" class="view-project-details font-bold text-snex-blue hover:text-snex-blueDark" data-id="p2">Détails →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 (Énergie) -->
+        <div class="project-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300" data-cat="energie">
+          <div class="relative h-52 overflow-hidden">
+            <img src="assets/images/watermarked_img_13151724932830594196.jpg" alt="Centrale secours data center 800 kVA" class="w-full h-full object-cover transform hover:scale-105 transition duration-500">
+            <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-bold bg-snex-orange text-white shadow">
+              Énergie Industrielle
+            </span>
+            <span class="absolute bottom-3 right-3 px-2.5 py-0.5 rounded text-[11px] font-semibold bg-slate-900/80 text-white backdrop-blur-sm">
+              Plateau, Abidjan
+            </span>
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="font-bold text-slate-900 text-lg">Sécurisation énergétique Data Center 800 kVA</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Installation d'un groupe électrogène insonorisé de 800 kVA, inverseur de source motorisé et banc de redresseurs de secours avec garantie zéro coupure.
+            </p>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+              <span class="text-slate-500">Continuité assurée : <strong class="text-orange-600 font-bold">100% Zéro perte</strong></span>
+              <button type="button" class="view-project-details font-bold text-snex-blue hover:text-snex-blueDark" data-id="p3">Détails →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 (Solaire & Énergie Hybride) -->
+        <div class="project-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300" data-cat="solaire">
+          <div class="relative h-52 overflow-hidden">
+            <img src="assets/images/watermarked_img_5420676125577618718.jpg" alt="Hybridation solaire site isolé" class="w-full h-full object-cover transform hover:scale-105 transition duration-500">
+            <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-bold bg-emerald-600 text-white shadow">
+              Photovoltaïque & Télécom
+            </span>
+            <span class="absolute bottom-3 right-3 px-2.5 py-0.5 rounded text-[11px] font-semibold bg-slate-900/80 text-white backdrop-blur-sm">
+              Korhogo, Côte d'Ivoire
+            </span>
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="font-bold text-slate-900 text-lg">Hybridation solaire 50 kWc pour site télécom isolé</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Remplacement de la dépendance diesel par un générateur photovoltaïque avec parc batteries lithium LiFePO4 48V, réduisant les émissions et le coût gasoil de 75%.
+            </p>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+              <span class="text-slate-500">Réduction gasoil : <strong class="text-emerald-600 font-bold">-75% litres/an</strong></span>
+              <button type="button" class="view-project-details font-bold text-snex-blue hover:text-snex-blueDark" data-id="p4">Détails →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 (Énergie) -->
+        <div class="project-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300" data-cat="energie">
+          <div class="relative h-52 overflow-hidden bg-slate-800">
+            <img src="assets/images/watermarked_img_13151724932830594196.jpg" alt="Poste MT BT agro-industrie" class="w-full h-full object-cover opacity-90 transform hover:scale-105 transition duration-500">
+            <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-bold bg-snex-orange text-white shadow">
+              Énergie Industrielle
+            </span>
+            <span class="absolute bottom-3 right-3 px-2.5 py-0.5 rounded text-[11px] font-semibold bg-slate-900/80 text-white backdrop-blur-sm">
+              San-Pédro
+            </span>
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="font-bold text-slate-900 text-lg">Poste de transformation MT/BT 1250 kVA</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Mise en place de cellules moyenne tension 15/33 kV, TGBT principal et armoire de compensation automatique pour une usine de transformation de cacao.
+            </p>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+              <span class="text-slate-500">Facteur de puissance : <strong class="text-orange-600 font-bold">cos phi &gt; 0.98</strong></span>
+              <button type="button" class="view-project-details font-bold text-snex-blue hover:text-snex-blueDark" data-id="p5">Détails →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 (Télécom) -->
+        <div class="project-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300" data-cat="telecom">
+          <div class="relative h-52 overflow-hidden">
+            <img src="assets/images/watermarked_img_5420676125577618718.jpg" alt="Déploiement fibre et FH" class="w-full h-full object-cover transform hover:scale-105 transition duration-500">
+            <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-bold bg-snex-blue text-white shadow">
+              Télécommunications
+            </span>
+            <span class="absolute bottom-3 right-3 px-2.5 py-0.5 rounded text-[11px] font-semibold bg-slate-900/80 text-white backdrop-blur-sm">
+              Région des Lagunes
+            </span>
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="font-bold text-slate-900 text-lg">Boucle optique & faisceaux hertziens inter-sites</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Tirage de 45 km de câble fibre optique ADSS, épissurage par fusion et installation de liaisons micro-ondes très haut débit pour opérateur télécom.
+            </p>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+              <span class="text-slate-500">Capacité transmission : <strong class="text-blue-600 font-bold">10 Gbps</strong></span>
+              <button type="button" class="view-project-details font-bold text-snex-blue hover:text-snex-blueDark" data-id="p6">Détails →</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6 : FORMULAIRE DE DEMANDE DE DEVIS EN 5 ÉTAPES QUALIFIÉES (SECTION 10 DU CAHIER DES CHARGES) -->
+  <section id="devis" class="py-20 bg-snex-navy text-white relative overflow-hidden">
+    <!-- Decorative background elements -->
+    <div class="absolute -top-24 -left-24 w-96 h-96 bg-snex-blue/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-snex-orange/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center space-y-3 mb-12">
+        <span class="px-3 py-1 rounded-full text-xs font-bold bg-snex-orange/20 text-orange-400 border border-snex-orange/30">
+          Module B2B Qualifié • Réponse garantie sous 24h
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-display font-extrabold tracking-tight">
+          Demande d'Étude & de Devis Personnalisé
+        </h2>
+        <p class="text-slate-300 text-sm max-w-xl mx-auto">
+          Complétez notre formulaire interactif en 5 étapes pour transmettre les spécifications de votre projet à nos ingénieurs d'affaires.
+        </p>
+      </div>
+
+      <!-- Form Wizard Card -->
+      <div class="bg-slate-900/90 backdrop-blur-md rounded-3xl border border-white/15 p-6 sm:p-10 shadow-2xl">
+        
+        <!-- Step Progress Bar -->
+        <div class="mb-8">
+          <div class="flex items-center justify-between text-xs font-semibold text-slate-300 mb-2">
+            <span id="stepLabelIndicator">Étape 1 sur 5 : Identification</span>
+            <span id="stepPercentIndicator" class="text-snex-orange">20%</span>
+          </div>
+          <div class="w-full bg-slate-800 rounded-full h-2.5 overflow-hidden">
+            <div id="stepProgressBar" class="bg-gradient-to-r from-snex-blue via-snex-orange to-snex-green h-2.5 rounded-full transition-all duration-300 w-1/5"></div>
+          </div>
+          
+          <!-- Step indicators breadcrumb -->
+          <div class="grid grid-cols-5 gap-1 mt-4 text-[10px] text-center font-medium">
+            <div id="badgeStep1" class="text-snex-orange font-bold">1. Contact</div>
+            <div id="badgeStep2" class="text-slate-400">2. Localisation</div>
+            <div id="badgeStep3" class="text-slate-400">3. Besoin</div>
+            <div id="badgeStep4" class="text-slate-400">4. Projet</div>
+            <div id="badgeStep5" class="text-slate-400">5. Fichiers</div>
+          </div>
+        </div>
+
+        <!-- FORM STEPS -->
+        <form id="devisMultiStepForm" class="space-y-6">
+
+          <!-- ÉTAPE 1 : IDENTIFICATION -->
+          <div id="step1" class="form-step space-y-4">
+            <h3 class="text-lg font-bold text-white border-b border-white/10 pb-2 flex items-center space-x-2">
+              <span class="w-6 h-6 rounded-full bg-snex-blue text-xs flex items-center justify-center font-bold">1</span>
+              <span>Identification de l'interlocuteur & de l'entreprise</span>
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="step1_nom" class="block text-xs font-semibold text-slate-300 mb-1">Nom & Prénom *</label>
+                <input type="text" id="step1_nom" required placeholder="Ex. Koffi Jean-Marc" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-snex-orange transition">
+              </div>
+              <div>
+                <label for="step1_entreprise" class="block text-xs font-semibold text-slate-300 mb-1">Entreprise / Organisation *</label>
+                <input type="text" id="step1_entreprise" required placeholder="Ex. Orange CI, MTN, Groupe SIFCA, Particulier..." class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-snex-orange transition">
+              </div>
+              <div>
+                <label for="step1_fonction" class="block text-xs font-semibold text-slate-300 mb-1">Fonction / Titre</label>
+                <input type="text" id="step1_fonction" placeholder="Ex. Directeur Technique, Chef de Projet, Gérant..." class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-snex-orange transition">
+              </div>
+              <div>
+                <label for="step1_email" class="block text-xs font-semibold text-slate-300 mb-1">Adresse E-mail Professionnelle *</label>
+                <input type="email" id="step1_email" required placeholder="nom@entreprise.com" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-snex-orange transition">
+              </div>
+              <div class="sm:col-span-2">
+                <label for="step1_telephone" class="block text-xs font-semibold text-slate-300 mb-1">Numéro de Téléphone / WhatsApp *</label>
+                <input type="tel" id="step1_telephone" required placeholder="+225 07 00 00 00 00" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-snex-orange transition">
+              </div>
+            </div>
+          </div>
+
+          <!-- ÉTAPE 2 : LOCALISATION -->
+          <div id="step2" class="form-step hidden space-y-4">
+            <h3 class="text-lg font-bold text-white border-b border-white/10 pb-2 flex items-center space-x-2">
+              <span class="w-6 h-6 rounded-full bg-snex-orange text-xs flex items-center justify-center font-bold">2</span>
+              <span>Localisation géographique du projet</span>
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="step2_pays" class="block text-xs font-semibold text-slate-300 mb-1">Pays d'intervention *</label>
+                <select id="step2_pays" required class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-snex-orange transition">
+                  <option value="Côte d’Ivoire" selected>Côte d’Ivoire</option>
+                  <option value="Sénégal">Sénégal</option>
+                  <option value="Mali">Mali</option>
+                  <option value="Burkina Faso">Burkina Faso</option>
+                  <option value="Ghana">Ghana</option>
+                  <option value="Togo">Togo</option>
+                  <option value="Bénin">Bénin</option>
+                  <option value="Autre pays">Autre pays de la sous-région</option>
+                </select>
+              </div>
+              <div>
+                <label for="step2_ville" class="block text-xs font-semibold text-slate-300 mb-1">Ville principale *</label>
+                <input type="text" id="step2_ville" required placeholder="Ex. Abidjan, San Pedro, Bouaké, Dakar, Bamako..." class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-snex-orange transition">
+              </div>
+              <div class="sm:col-span-2">
+                <label for="step2_site" class="block text-xs font-semibold text-slate-300 mb-1">Adresse ou coordonnées du site / quartier</label>
+                <input type="text" id="step2_site" placeholder="Ex. Port-Bouët Gonzagueville, Zone Industrielle Vridi, ou coordonnées GPS" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-snex-orange transition">
+              </div>
+            </div>
+          </div>
+
+          <!-- ÉTAPE 3 : BESOIN / PÔLE -->
+          <div id="step3" class="form-step hidden space-y-4">
+            <h3 class="text-lg font-bold text-white border-b border-white/10 pb-2 flex items-center space-x-2">
+              <span class="w-6 h-6 rounded-full bg-snex-green text-xs flex items-center justify-center font-bold">3</span>
+              <span>Sélection du ou des pôle(s) d'activité concerné(s)</span>
+            </h3>
+            <p class="text-xs text-slate-300">Cochez les domaines requis pour votre cahier des charges :</p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+              <label class="relative flex flex-col p-4 bg-slate-800 border border-slate-700 rounded-2xl cursor-pointer hover:border-snex-blue transition">
+                <input type="checkbox" name="pole_need" value="Télécommunications" class="absolute top-4 right-4 w-4 h-4 text-snex-blue rounded bg-slate-900 border-slate-600 focus:ring-snex-blue">
+                <div class="w-8 h-8 rounded-lg bg-blue-500/20 text-snex-blue flex items-center justify-center mb-3">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                </div>
+                <span class="font-bold text-white text-sm">Télécoms</span>
+                <span class="text-[11px] text-slate-400 mt-1">Pylônes, fibre, exploitation 24/7, maintenance réseau.</span>
+              </label>
+
+              <label class="relative flex flex-col p-4 bg-slate-800 border border-slate-700 rounded-2xl cursor-pointer hover:border-snex-orange transition">
+                <input type="checkbox" name="pole_need" value="Énergie" class="absolute top-4 right-4 w-4 h-4 text-snex-orange rounded bg-slate-900 border-slate-600 focus:ring-snex-orange">
+                <div class="w-8 h-8 rounded-lg bg-orange-500/20 text-snex-orange flex items-center justify-center mb-3">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <span class="font-bold text-white text-sm">Énergie</span>
+                <span class="text-[11px] text-slate-400 mt-1">Groupes électrogènes, postes MT/BT, onduleurs UPS.</span>
+              </label>
+
+              <label class="relative flex flex-col p-4 bg-slate-800 border border-slate-700 rounded-2xl cursor-pointer hover:border-snex-green transition">
+                <input type="checkbox" name="pole_need" value="Photovoltaïque" class="absolute top-4 right-4 w-4 h-4 text-snex-green rounded bg-slate-900 border-slate-600 focus:ring-snex-green">
+                <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-snex-green flex items-center justify-center mb-3">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                </div>
+                <span class="font-bold text-white text-sm">Photovoltaïque</span>
+                <span class="text-[11px] text-slate-400 mt-1">Dimensionnement, centrales toitures, kits solaires hybrides.</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- ÉTAPE 4 : DESCRIPTION & BUDGET -->
+          <div id="step4" class="form-step hidden space-y-4">
+            <h3 class="text-lg font-bold text-white border-b border-white/10 pb-2 flex items-center space-x-2">
+              <span class="w-6 h-6 rounded-full bg-amber-500 text-xs flex items-center justify-center font-bold text-slate-900">4</span>
+              <span>Détails du projet & enveloppe estimative</span>
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="step4_type" class="block text-xs font-semibold text-slate-300 mb-1">Type de prestation</label>
+                <select id="step4_type" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-snex-orange transition">
+                  <option value="Nouvelle installation clé en main">Nouvelle installation clé en main</option>
+                  <option value="Maintenance / Réhabilitation de site">Maintenance / Réhabilitation de site</option>
+                  <option value="Audit & dimensionnement d'ingénierie">Audit & dimensionnement d'ingénierie</option>
+                  <option value="Contrat d'exploitation & supervision 24/7">Contrat d'exploitation & supervision 24/7</option>
+                  <option value="Fourniture de matériel spécialisé">Fourniture de matériel spécialisé</option>
+                </select>
+              </div>
+              <div>
+                <label for="step4_budget" class="block text-xs font-semibold text-slate-300 mb-1">Budget estimatif (indicatif)</label>
+                <select id="step4_budget" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-snex-orange transition">
+                  <option value="Moins de 5 millions FCFA">&lt; 5 millions FCFA</option>
+                  <option value="5 à 20 millions FCFA">5 à 20 millions FCFA</option>
+                  <option value="20 à 50 millions FCFA">20 à 50 millions FCFA</option>
+                  <option value="50 à 100 millions FCFA">50 à 100 millions FCFA</option>
+                  <option value="Plus de 100 millions FCFA">&gt; 100 millions FCFA</option>
+                  <option value="À déterminer selon étude">À déterminer selon étude technique</option>
+                </select>
+              </div>
+              <div class="sm:col-span-2">
+                <label for="step4_description" class="block text-xs font-semibold text-slate-300 mb-1">Description détaillée du besoin et des contraintes *</label>
+                <textarea id="step4_description" rows="4" required placeholder="Précisez les puissances souhaitées (kVA / kWc), le nombre de sites, les délais requis ou toute exigence particulière..." class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-snex-orange transition"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- ÉTAPE 5 : DOCUMENTS & CONFIRMATION -->
+          <div id="step5" class="form-step hidden space-y-4">
+            <h3 class="text-lg font-bold text-white border-b border-white/10 pb-2 flex items-center space-x-2">
+              <span class="w-6 h-6 rounded-full bg-emerald-500 text-xs flex items-center justify-center font-bold">5</span>
+              <span>Documents techniques & transmission du dossier</span>
+            </h3>
+            
+            <!-- Upload Simulator -->
+            <div class="border-2 border-dashed border-slate-700 rounded-2xl p-6 text-center hover:border-snex-orange transition bg-slate-800/50">
+              <svg class="w-10 h-10 text-slate-400 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
+              <div class="text-xs text-slate-300 font-semibold mb-1">
+                Joindre un cahier des charges, plans ou photos techniques
+              </div>
+              <p class="text-[11px] text-slate-400">Formats acceptés : PDF, Word, Excel, DWG, ZIP ou JPG (Max 25 Mo)</p>
+              <input type="file" id="devis_file_upload" class="hidden" multiple>
+              <button type="button" id="triggerFileUploadBtn" class="mt-3 px-4 py-1.5 bg-slate-700 hover:bg-slate-600 text-white rounded-lg text-xs font-medium transition">
+                Parcourir les fichiers
+              </button>
+              <div id="fileUploadSummary" class="text-xs text-emerald-400 mt-2 font-mono"></div>
+            </div>
+
+            <!-- Anti-Spam (Cloudflare Turnstile simulation required by Section 17) -->
+            <div class="p-4 bg-slate-800 rounded-xl border border-slate-700 flex items-center justify-between">
+              <div class="flex items-center space-x-3">
+                <input type="checkbox" id="turnstileCheck" required checked class="w-5 h-5 text-emerald-500 rounded bg-slate-900 border-slate-600 focus:ring-emerald-500">
+                <label for="turnstileCheck" class="text-xs text-slate-300 select-none">
+                  Vérification de sécurité anti-spam (Cloudflare Turnstile certifié)
+                </label>
+              </div>
+              <span class="text-[10px] text-slate-500 font-mono">SSL 256-bit</span>
+            </div>
+
+            <!-- Recap Card -->
+            <div id="devisRecapContainer" class="p-4 bg-slate-950/60 rounded-xl border border-white/10 text-xs space-y-1.5">
+              <div class="font-bold text-slate-200">Récapitulatif de votre demande :</div>
+              <div id="recapContact" class="text-slate-400">Contact : -</div>
+              <div id="recapLocation" class="text-slate-400">Lieu : -</div>
+              <div id="recapPoles" class="text-slate-400">Pôle(s) : -</div>
+            </div>
+          </div>
+
+          <!-- NAVIGATION BUTTONS -->
+          <div class="flex items-center justify-between pt-4 border-t border-white/10">
+            <button type="button" id="prevStepBtn" class="hidden px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white font-semibold text-xs transition">
+              ← Étape précédente
+            </button>
+            <div class="ml-auto flex items-center space-x-3">
+              <button type="button" id="nextStepBtn" class="px-6 py-3 rounded-xl bg-snex-orange hover:bg-snex-orangeLight text-white font-bold text-xs shadow-lg shadow-snex-orange/20 transition flex items-center space-x-2">
+                <span>Étape suivante</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              </button>
+              <button type="submit" id="submitDevisBtn" class="hidden px-8 py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-snex-green hover:from-emerald-400 hover:to-emerald-600 text-white font-bold text-xs shadow-lg shadow-emerald-500/20 transition flex items-center space-x-2">
+                <span>Transmettre la demande de devis</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              </button>
+            </div>
+          </div>
+
+        </form>
+
+        <!-- Confirmation screen (hidden by default) -->
+        <div id="devisSuccessScreen" class="hidden text-center py-10 space-y-4">
+          <div class="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center justify-center mx-auto text-2xl font-bold">
+            ✓
+          </div>
+          <h3 class="text-2xl font-bold text-white">Demande de devis enregistrée avec succès !</h3>
+          <p class="text-slate-300 text-xs max-w-md mx-auto leading-relaxed">
+            Votre dossier <span id="generatedDossierNum" class="font-mono text-amber-400 font-bold">#SNEX-2026-084</span> a été transmis au bureau d'études de S_NEX SARL à Abidjan (Port-Bouët). Un ingénieur d'affaires prendra contact avec vous sous 24h ouvrées.
+          </p>
+          <div class="pt-4 flex justify-center space-x-4">
+            <button type="button" id="resetDevisBtn" class="px-5 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-300">
+              Effectuer une nouvelle demande
+            </button>
+            <a href="https://wa.me/2250700000000?text=Bonjour%20S_NEX%20SARL,%20je%20viens%20de%20d%C3%A9poser%20une%20demande%20de%20devis" target="_blank" rel="noopener noreferrer" class="px-5 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-xs font-bold text-white flex items-center space-x-2">
+              <span>Notification WhatsApp immédiate</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7 : ESPACE CARRIÈRE & RECRUTEMENT (SECTION 12 DU CAHIER DES CHARGES) -->
+  <section id="carrieres" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div class="space-y-3 max-w-2xl">
+          <div class="inline-flex items-center space-x-2 text-snex-blue text-xs font-bold uppercase tracking-wider">
+            <span class="w-8 h-0.5 bg-snex-blue"></span>
+            <span>Talents & Développement Régional</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-slate-900 tracking-tight">
+            Rejoignez l'Aventure S_NEX SARL
+          </h2>
+          <p class="text-slate-600">
+            Dans le cadre de notre expansion en Côte d’Ivoire et en Afrique de l'Ouest, nous recrutons des talents passionnés par la technique, la sécurité et l'énergie durable.
+          </p>
+        </div>
+        <div class="mt-4 md:mt-0">
+          <button type="button" id="openCandidatureSpontaneeBtn" class="bg-snex-navy hover:bg-snex-blue text-white text-xs font-bold px-5 py-2.5 rounded-lg transition">
+            Candidature spontanée →
+          </button>
+        </div>
+      </div>
+
+      <!-- Job postings grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Job 1 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-snex-blue hover:shadow-lg transition flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded text-[11px] font-bold bg-blue-100 text-snex-blue">Télécom</span>
+              <span class="text-xs text-slate-500">CDI • Plein temps</span>
+            </div>
+            <h3 class="font-bold text-slate-900 text-base">Ingénieur Télécom Réseau & Pylônes</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Supervision des déploiements FH, audits d'antennes et management des équipes de cordistes et techniciens télécoms.
+            </p>
+            <div class="text-xs text-slate-500 flex items-center space-x-1">
+              <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              <span>Abidjan (Port-Bouët) + Missions région</span>
+            </div>
+          </div>
+          <button type="button" class="postuler-btn mt-6 w-full text-center py-2 bg-white border border-slate-300 hover:border-snex-blue hover:bg-snex-blue hover:text-white rounded-lg text-xs font-semibold text-slate-700 transition" data-job="Ingénieur Télécom Réseau & Pylônes">
+            Postuler à cette offre
+          </button>
+        </div>
+
+        <!-- Job 2 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-snex-orange hover:shadow-lg transition flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded text-[11px] font-bold bg-orange-100 text-snex-orange">Énergie</span>
+              <span class="text-xs text-slate-500">CDI • Plein temps</span>
+            </div>
+            <h3 class="font-bold text-slate-900 text-base">Technicien Électromécanicien Groupes</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Maintenance préventive et curative sur groupes électrogènes diesel 100 à 1000 kVA, automates ATS et tableaux TGBT.
+            </p>
+            <div class="text-xs text-slate-500 flex items-center space-x-1">
+              <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              <span>Abidjan & Sud Côte d’Ivoire</span>
+            </div>
+          </div>
+          <button type="button" class="postuler-btn mt-6 w-full text-center py-2 bg-white border border-slate-300 hover:border-snex-orange hover:bg-snex-orange hover:text-white rounded-lg text-xs font-semibold text-slate-700 transition" data-job="Technicien Électromécanicien Groupes">
+            Postuler à cette offre
+          </button>
+        </div>
+
+        <!-- Job 3 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-snex-green hover:shadow-lg transition flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded text-[11px] font-bold bg-emerald-100 text-emerald-700">Photovoltaïque</span>
+              <span class="text-xs text-slate-500">Stage pré-embauche • 6 mois</span>
+            </div>
+            <h3 class="font-bold text-slate-900 text-base">Stagiaire Ingénieur Solaire & PVsyst</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Audits de gisement solaire, dimensionnement d'installations toitures industrielles et suivi de chantier raccordement.
+            </p>
+            <div class="text-xs text-slate-500 flex items-center space-x-1">
+              <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              <span>Abidjan (Port-Bouët Gonzagueville)</span>
+            </div>
+          </div>
+          <button type="button" class="postuler-btn mt-6 w-full text-center py-2 bg-white border border-slate-300 hover:border-snex-green hover:bg-emerald-600 hover:text-white rounded-lg text-xs font-semibold text-slate-700 transition" data-job="Stagiaire Ingénieur Solaire">
+            Postuler à cette offre
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Candidature Form Box (collapsible / triggered) -->
+      <div id="candidatureBox" class="hidden mt-10 p-6 sm:p-8 bg-slate-900 text-white rounded-3xl border border-slate-800">
+        <div class="flex items-center justify-between mb-6 pb-2 border-b border-white/10">
+          <div>
+            <h3 class="text-lg font-bold" id="candidatureTitle">Transmission de Candidature</h3>
+            <p class="text-xs text-slate-400">Remplissez les informations ci-dessous pour transmettre votre CV au département RH.</p>
+          </div>
+          <button type="button" id="closeCandidatureBtn" class="text-slate-400 hover:text-white text-sm font-bold">✕ Fermer</button>
+        </div>
+        <form id="candidatureForm" class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+          <div>
+            <label class="block font-semibold mb-1 text-slate-300">Nom & Prénom *</label>
+            <input type="text" required placeholder="Votre nom complet" class="w-full bg-slate-800 border border-slate-700 rounded-lg p-2.5 text-white">
+          </div>
+          <div>
+            <label class="block font-semibold mb-1 text-slate-300">Poste convoité *</label>
+            <input type="text" id="cand_poste" required placeholder="Intitulé du poste" class="w-full bg-slate-800 border border-slate-700 rounded-lg p-2.5 text-white">
+          </div>
+          <div>
+            <label class="block font-semibold mb-1 text-slate-300">Adresse e-mail *</label>
+            <input type="email" required placeholder="votre.email@domaine.com" class="w-full bg-slate-800 border border-slate-700 rounded-lg p-2.5 text-white">
+          </div>
+          <div>
+            <label class="block font-semibold mb-1 text-slate-300">Téléphone / WhatsApp *</label>
+            <input type="tel" required placeholder="+225 ..." class="w-full bg-slate-800 border border-slate-700 rounded-lg p-2.5 text-white">
+          </div>
+          <div class="sm:col-span-2">
+            <label class="block font-semibold mb-1 text-slate-300">Curriculum Vitae (PDF) & Lettre de motivation *</label>
+            <input type="file" required accept=".pdf,.doc,.docx" class="w-full bg-slate-800 border border-slate-700 rounded-lg p-2 text-slate-300 file:mr-4 file:py-1 file:px-3 file:rounded file:border-0 file:text-xs file:bg-snex-blue file:text-white">
+          </div>
+          <div class="sm:col-span-2 pt-2">
+            <button type="submit" class="px-6 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-lg transition">
+              Envoyer ma candidature à S_NEX SARL
+            </button>
+          </div>
+        </form>
+        <div id="candidatureSuccess" class="hidden text-center py-6 space-y-2">
+          <div class="text-emerald-400 font-bold text-base">✓ Candidature bien enregistrée !</div>
+          <p class="text-slate-400 text-xs">Notre équipe des Ressources Humaines examinera votre profil avec attention.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8 : PAGE CONTACT & LOCALISATION GOOGLE MAPS (PORT-BOUËT GONZAGUEVILLE) -->
+  <section id="contact" class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+        <div class="inline-flex items-center space-x-2 text-snex-blue text-xs font-bold uppercase tracking-wider">
+          <span class="w-8 h-0.5 bg-snex-blue"></span>
+          <span>Nous Contacter</span>
+          <span class="w-8 h-0.5 bg-snex-blue"></span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-slate-900 tracking-tight">
+          À Votre Écoute à Abidjan & dans la Sous-Région
+        </h2>
+        <p class="text-slate-600">
+          Nos équipes techniques et commerciales vous accueillent à Port-Bouët – Gonzagueville et se déplacent sur l'ensemble de vos sites industriels.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        
+        <!-- Contact Cards & Info -->
+        <div class="lg:col-span-5 space-y-4">
+          <!-- Card 1 : Address -->
+          <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm flex items-start space-x-4">
+            <div class="w-10 h-10 rounded-xl bg-blue-50 text-snex-blue flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 text-sm">Siège Social</h3>
+              <p class="text-xs text-slate-600 mt-1">
+                <strong>S_NEX SARL</strong><br>
+                Abidjan, Côte d’Ivoire<br>
+                Commune de Port-Bouët – Quartier Gonzagueville<br>
+                Route de Bassam, Axe Stratégique
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 : Phone & WhatsApp -->
+          <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm flex items-start space-x-4">
+            <div class="w-10 h-10 rounded-xl bg-orange-50 text-snex-orange flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 text-sm">Téléphones & WhatsApp</h3>
+              <p class="text-xs text-slate-600 mt-1">
+                Standard : <a href="tel:+2252721000000" class="text-snex-blue font-semibold hover:underline">+225 27 21 58 40 10</a><br>
+                Cellulaire : <a href="tel:+2250700000000" class="text-snex-blue font-semibold hover:underline">+225 07 48 90 12 34</a><br>
+                WhatsApp B2B : <a href="https://wa.me/2250700000000" target="_blank" rel="noopener noreferrer" class="text-emerald-600 font-semibold hover:underline">+225 07 48 90 12 34</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 : Email & Astreinte -->
+          <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm flex items-start space-x-4">
+            <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 text-sm">Adresses E-mail</h3>
+              <p class="text-xs text-slate-600 mt-1">
+                Direction générale : <a href="mailto:contact@snex-sarl.com" class="text-snex-blue hover:underline">contact@snex-sarl.com</a><br>
+                Bureau d'études / Devis : <a href="mailto:devis@snex-sarl.com" class="text-snex-blue hover:underline">devis@snex-sarl.com</a><br>
+                Support Télécom 24/7 : <a href="mailto:support@snex-sarl.com" class="text-snex-blue hover:underline">support@snex-sarl.com</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 : Horaires -->
+          <div class="p-4 bg-slate-900 text-white rounded-xl text-xs space-y-1">
+            <div class="font-bold text-amber-400">Horaires d'ouverture des bureaux :</div>
+            <div class="flex justify-between text-slate-300">
+              <span>Lundi au Vendredi :</span>
+              <span>07h30 – 18h00</span>
+            </div>
+            <div class="flex justify-between text-slate-300">
+              <span>Samedi :</span>
+              <span>08h30 – 13h00 (sur rendez-vous)</span>
+            </div>
+            <div class="flex justify-between text-emerald-400 font-semibold pt-1 border-t border-white/10">
+              <span>Astreinte Télécom & Énergie :</span>
+              <span>24h/24 – 7j/7</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Map & Quick Message -->
+        <div class="lg:col-span-7 space-y-6">
+          
+          <!-- Styled Google Maps Mockup for Port-Bouët Gonzagueville -->
+          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+            <div class="p-3 bg-slate-100 border-b border-slate-200 flex items-center justify-between text-xs font-semibold text-slate-700">
+              <span class="flex items-center space-x-1.5">
+                <svg class="w-4 h-4 text-red-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                <span>Localisation du Siège : Abidjan, Port-Bouët Gonzagueville</span>
+              </span>
+              <a href="https://maps.google.com/?q=Port-Bouet+Gonzagueville+Abidjan" target="_blank" rel="noopener noreferrer" class="text-snex-blue hover:underline text-[11px]">
+                Ouvrir dans Google Maps ↗
+              </a>
+            </div>
+
+            <!-- Stylized Vector Map of Abidjan Port-Bouët Gonzagueville -->
+            <div class="relative w-full h-64 bg-slate-200 flex items-center justify-center overflow-hidden">
+              <svg viewBox="0 0 600 300" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                <!-- Lagoon & Ocean background -->
+                <rect width="600" height="300" fill="#E2E8F0"/>
+                <!-- Ébrié Lagoon -->
+                <path d="M0,0 L600,0 L600,80 Q450,110 300,70 Q150,120 0,60 Z" fill="#93C5FD" opacity="0.6"/>
+                <text x="50" y="40" fill="#1E3A8A" font-size="12" font-style="italic">Lagune Ébrié</text>
+                <!-- Gulf of Guinea (Ocean) -->
+                <path d="M0,230 Q200,210 400,240 Q500,220 600,250 L600,300 L0,300 Z" fill="#60A5FA" opacity="0.5"/>
+                <text x="450" y="280" fill="#1E3A8A" font-size="12" font-style="italic">Océan Atlantique</text>
+                
+                <!-- Main Highway : Boulevard de Marseille & Route de Grand-Bassam -->
+                <path d="M0,130 Q180,140 320,150 T600,160" stroke="#CBD5E1" stroke-width="22" fill="none"/>
+                <path d="M0,130 Q180,140 320,150 T600,160" stroke="#F59E0B" stroke-width="4" stroke-dasharray="10,8" fill="none"/>
+                <text x="180" y="125" fill="#475569" font-size="11" font-weight="bold">Autoroute Abidjan - Grand-Bassam</text>
+                
+                <!-- Secondary roads -->
+                <line x1="320" y1="80" x2="320" y2="230" stroke="#FFFFFF" stroke-width="6"/>
+                <line x1="180" y1="90" x2="200" y2="220" stroke="#FFFFFF" stroke-width="4"/>
+                <line x1="450" y1="100" x2="430" y2="240" stroke="#FFFFFF" stroke-width="5"/>
+                
+                <!-- District Zones -->
+                <rect x="70" y="100" width="90" height="50" rx="6" fill="#F1F5F9" stroke="#CBD5E1" opacity="0.8"/>
+                <text x="115" y="130" text-anchor="middle" fill="#64748B" font-size="10">Aéroport F.H.B.</text>
+                
+                <rect x="230" y="170" width="160" height="55" rx="8" fill="#F8FAFC" stroke="#0B2046" stroke-width="1.5" opacity="0.95"/>
+                <text x="310" y="195" text-anchor="middle" fill="#0B2046" font-size="11" font-weight="bold">Gonzagueville</text>
+                <text x="310" y="210" text-anchor="middle" fill="#EA580C" font-size="9">Commune de Port-Bouët</text>
+                
+                <!-- S_NEX SARL Pin Marker -->
+                <g transform="translate(310, 140)">
+                  <circle cx="0" cy="0" r="14" fill="#EA580C" opacity="0.3">
+                    <animate attributeName="r" values="10;22;10" dur="2s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values="0.6;0;0.6" dur="2s" repeatCount="indefinite"/>
+                  </circle>
+                  <circle cx="0" cy="0" r="10" fill="#0B2046" stroke="#FFFFFF" stroke-width="2"/>
+                  <circle cx="0" cy="0" r="4" fill="#EA580C"/>
+                  <rect x="-60" y="-38" width="120" height="24" rx="4" fill="#0B2046"/>
+                  <text x="0" y="-22" text-anchor="middle" fill="#FFFFFF" font-size="10" font-weight="bold">S_NEX SARL (Siège)</text>
+                </g>
+              </svg>
+            </div>
+            <div class="p-3 bg-slate-50 text-[11px] text-slate-500 flex justify-between items-center">
+              <span>Position : Port-Bouët Gonzagueville, Axe Abidjan – Bassam</span>
+              <span class="text-snex-blue font-semibold">Accès aisé camions & fret</span>
+            </div>
+          </div>
+
+          <!-- Quick Message Form -->
+          <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm section-card">
+            <h3 class="font-bold text-slate-900 text-sm mb-4">Envoyez-nous un message direct</h3>
+            <form id="quickContactForm" class="space-y-3 text-xs">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <input type="text" id="qc_nom" name="name" required placeholder="Votre nom *" class="form-field">
+                <input type="email" id="qc_email" name="email" required placeholder="Votre e-mail *" class="form-field">
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <input type="tel" id="qc_phone" name="phone" placeholder="Téléphone" class="form-field">
+                <select id="qc_type" name="type" class="form-field">
+                  <option value="">Type de demande</option>
+                  <option>Télécommunications</option>
+                  <option>Énergie</option>
+                  <option>Photovoltaïque</option>
+                  <option>Autre</option>
+                </select>
+              </div>
+              <input type="text" id="qc_sujet" name="subject" required placeholder="Objet du message *" class="form-field">
+              <textarea id="qc_message" name="message" rows="4" required placeholder="Décrivez votre besoin..." class="form-field min-h-[120px]"></textarea>
+              <button type="submit" class="w-full py-2.5 bg-snex-navy hover:bg-snex-blue text-white font-bold rounded-lg transition shadow-sm">
+                Envoyer le message
+              </button>
+            </form>
+            <div id="quickContactSuccess" class="hidden text-center py-3 text-xs text-emerald-600 font-bold">
+              ✓ Message transmis ! Notre équipe vous répondra sous 24h.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-snex-navy text-slate-400 text-xs border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        
+        <!-- Col 1: Brand -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center space-x-3">
+            <div class="w-9 h-9 bg-white/10 rounded-xl p-1.5 flex items-center justify-center border border-white/20">
+              <span class="font-display font-extrabold text-white text-base">S_N</span>
+            </div>
+            <span class="font-display font-extrabold text-xl text-white">S_NEX <span class="text-snex-orange font-normal text-sm">SARL</span></span>
+          </div>
+          <p class="text-slate-300 text-xs leading-relaxed max-w-sm">
+            « Connecter aujourd’hui, alimenter demain »<br>
+            Société spécialisée dans les Télécommunications, l'Énergie industrielle et le Solaire Photovoltaïque à Abidjan (Port-Bouët Gonzagueville) et en Afrique de l'Ouest.
+          </p>
+          <div class="pt-2 text-slate-400">
+            RCCM : CI-ABJ-2023-B-XXXX • Régime Fiscal Réel Normal
+          </div>
+        </div>
+
+        <!-- Col 2: Services -->
+        <div class="space-y-3">
+          <h4 class="text-white font-bold text-sm">Nos Domaines</h4>
+          <ul class="space-y-2">
+            <li><a href="#telecom" class="hover:text-snex-blue transition">Infrastructures Télécoms</a></li>
+            <li><a href="#telecom" class="hover:text-snex-blue transition">Ingénierie & Supervision 24/7</a></li>
+            <li><a href="#energie" class="hover:text-snex-orange transition">Groupes Électrogènes</a></li>
+            <li><a href="#energie" class="hover:text-snex-orange transition">Installations MT / BT & UPS</a></li>
+            <li><a href="#solaire" class="hover:text-snex-green transition">Centrales Photovoltaïques</a></li>
+            <li><a href="#solaire" class="hover:text-snex-green transition">Kits Solaires & Hybridation</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Présence Régionale -->
+        <div class="space-y-3">
+          <h4 class="text-white font-bold text-sm">Afrique de l'Ouest</h4>
+          <ul class="space-y-2">
+            <li><span class="text-white font-semibold">Côte d’Ivoire (Siège)</span></li>
+            <li><span>Sénégal</span></li>
+            <li><span>Mali</span></li>
+            <li><span>Burkina Faso</span></li>
+            <li><span>Ghana</span></li>
+            <li><span>Togo & Bénin</span></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Liens utiles & Contact -->
+        <div class="space-y-3">
+          <h4 class="text-white font-bold text-sm">Accès Rapide</h4>
+          <ul class="space-y-2">
+            <li><a href="#devis" class="text-snex-orange hover:underline font-semibold">Demander un devis</a></li>
+            <li><a href="#realisations" class="hover:text-white transition">Nos réalisations</a></li>
+            <li><a href="#carrieres" class="hover:text-white transition">Espace Carrière</a></li>
+            <li><a href="#contact" class="hover:text-white transition">Plan d'accès Gonzagueville</a></li>
+            <li><a href="https://wa.me/2250700000000" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline">WhatsApp Direct</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center text-[11px] text-slate-500 space-y-4 sm:space-y-0">
+        <div>
+          © 2026 S_NEX SARL. Tous droits réservés. Abidjan, Côte d’Ivoire.
+        </div>
+        <div class="flex space-x-6">
+          <span class="hover:text-slate-400">Mentions Légales</span>
+          <span class="hover:text-slate-400">Politique de Confidentialité</span>
+          <span class="hover:text-slate-400">Normes HSE & Sécurité</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON (Standard B2B in West Africa) -->
+  <a href="https://wa.me/2250700000000?text=Bonjour%20S_NEX%20SARL,%20je%20souhaite%20un%20devis" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-40 bg-emerald-600 hover:bg-emerald-500 text-white p-3.5 rounded-full shadow-2xl transition transform hover:scale-110 flex items-center space-x-2 group" title="Contactez S_NEX SARL sur WhatsApp">
+    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+    <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 font-bold text-xs pr-1">
+      WhatsApp B2B S_NEX
+    </span>
+  </a>
+
+  <!-- PROJECT DETAILS MODAL -->
+  <div id="projectModal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl relative space-y-4">
+      <button type="button" id="closeProjectModal" class="absolute top-5 right-5 text-slate-400 hover:text-slate-800 text-xl font-bold">✕</button>
+      <div id="projectModalContent" class="space-y-4">
+        <!-- Injected via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC (Interactive Features) -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Mobile Menu Toggle
+      const mobileBtn = document.getElementById('mobileMenuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      if (mobileBtn && mobileMenu) {
+        mobileBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+          link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+      }
+
+      // Smooth scroll triggers for Devis buttons
+      const devisButtons = [
+        'openDevisBtnNav',
+        'openDevisBtnMobile',
+        'openDevisBtnHero',
+        'openDevisBtnSidebar',
+        'openDevisBtnMap'
+      ];
+      devisButtons.forEach(btnId => {
+        const btn = document.getElementById(btnId);
+        if (btn) {
+          btn.addEventListener('click', () => {
+            const devisSec = document.getElementById('devis');
+            if (devisSec) {
+              devisSec.scrollIntoView({ behavior: 'smooth' });
+            }
+          });
+        }
+      });
+
+      // Devis buttons with pre-selected category
+      document.querySelectorAll('.open-devis-with-cat').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const category = e.currentTarget.getAttribute('data-category');
+          const devisSec = document.getElementById('devis');
+          if (devisSec) {
+            devisSec.scrollIntoView({ behavior: 'smooth' });
+            // Pre-select checkbox in step 3
+            const chk = document.querySelector(`input[name="pole_need"][value="${category}"]`);
+            if (chk) chk.checked = true;
+          }
+        });
+      });
+
+      // -------------------------------------------------------------
+      // WEST AFRICA REGIONAL DATA & INTERACTIVE MAP
+      // -------------------------------------------------------------
+      const regionalData = {
+        ci: {
+          name: "Côte d’Ivoire",
+          badge: "Siège Social & Hub Principal",
+          status: "Opérationnel 24/7",
+          hub: "Abidjan (Port-Bouët, Gonzagueville)",
+          poles: "Télécom • Énergie • Solaire",
+          desc: "Base centrale de S_NEX SARL. Gestion de +150 sites télécoms, ateliers électromécaniques de révision de groupes électrogènes, stock stratégique de pièces et ingénierie de projets solaires."
+        },
+        sn: {
+          name: "Sénégal",
+          badge: "Bureau de Liaison & Projets Solaires",
+          status: "Actif & Déploiement",
+          hub: "Dakar (Plateau & Diamniadio)",
+          poles: "Solaire Photovoltaïque & Télécom",
+          desc: "Accompagnement des opérateurs télécoms et industries sur l'axe Dakar-Thiès. Études de dimensionnement solaire toitures industrielles et mini-réseaux ruraux."
+        },
+        ml: {
+          name: "Mali",
+          badge: "Hybridation & Continuité Énergétique",
+          status: "Interventions Dédiées",
+          hub: "Bamako (Zone Industrielle Sotuba)",
+          poles: "Énergie • Groupes • Solaire Hybride",
+          desc: "Solutions d'hybridation solaire-diesel pour contrer les délestages. Sécurisation de sites bancaires et industriels avec groupes électrogènes de forte puissance (500 à 1500 kVA)."
+        },
+        bf: {
+          name: "Burkina Faso",
+          badge: "Centrales Solaires & Énergie Critique",
+          status: "Actif en Sous-Région",
+          hub: "Ouagadougou",
+          poles: "Photovoltaïque & Postes MT/BT",
+          desc: "Valorisation du gisement solaire burkinabè pour unités industrielles et agroalimentaires. Installations électriques sécurisées et maintenance d'onduleurs."
+        },
+        gh: {
+          name: "Ghana",
+          badge: "Partenariats Télécoms & Énergie B2B",
+          status: "Corridor Abidjan - Accra",
+          hub: "Accra (Tema Industrial Area)",
+          poles: "Télécommunications & Énergie",
+          desc: "Interventions transfrontalières pour TowerCos et opérateurs. Déploiement d'équipements passifs et fourniture de systèmes de secours énergétique."
+        },
+        tg: {
+          name: "Togo",
+          badge: "Infrastructures Portuaires & Solaire",
+          status: "Zone Portuaire Lomé",
+          hub: "Lomé",
+          poles: "Solaire & Groupes Électrogènes",
+          desc: "Dimensionnement photovoltaïque pour zones franches logistiques et sécurisation électrique des installations de chaîne de froid."
+        },
+        bj: {
+          name: "Bénin",
+          badge: "Réseaux Télécoms & Mini-Grids",
+          status: "Hub Régional Atlantique",
+          hub: "Cotonou",
+          poles: "Télécoms • Énergie Solaire",
+          desc: "Modernisation des liaisons hertziennes et déploiement de solutions d'autonomie solaire pour collectivités et entreprises privées."
+        }
+      };
+
+      function updateCountryInfo(code) {
+        const data = regionalData[code];
+        if (!data) return;
+
+        const badge = document.getElementById('countryBadge');
+        const status = document.getElementById('countryStatus');
+        const name = document.getElementById('countryName');
+        const desc = document.getElementById('countryDesc');
+        const hub = document.getElementById('countryHub');
+        const poles = document.getElementById('countryPoles');
+
+        if (badge) badge.textContent = data.badge;
+        if (status) status.textContent = data.status;
+        if (name) name.textContent = data.name;
+        if (desc) desc.textContent = data.desc;
+        if (hub) hub.textContent = data.hub;
+        if (poles) poles.textContent = data.poles;
+
+        document.querySelectorAll('.country-btn').forEach(btn => {
+          if (btn.getAttribute('data-country') === code) {
+            btn.classList.add('bg-snex-blue', 'text-white');
+            btn.classList.remove('bg-slate-800', 'text-slate-300');
+          } else if (btn.getAttribute('data-country')) {
+            btn.classList.remove('bg-snex-blue', 'text-white');
+            btn.classList.add('bg-slate-800', 'text-slate-300');
+          }
+        });
+      }
+
+      document.querySelectorAll('.country-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const code = e.currentTarget.getAttribute('data-country');
+          if (code) updateCountryInfo(code);
+        });
+      });
+
+      document.querySelectorAll('.country-node').forEach(node => {
+        node.addEventListener('click', (e) => {
+          const code = e.currentTarget.getAttribute('data-country');
+          if (code) updateCountryInfo(code);
+        });
+      });
+
+      // -------------------------------------------------------------
+      // PROJECTS FILTERING & MODAL DETAILS
+      // -------------------------------------------------------------
+      const projectDetailsData = {
+        p1: {
+          title: "Centrale solaire toiture industrielle 350 kWc",
+          sector: "Photovoltaïque & Décarbonation",
+          client: "Complexe Logistique & Fret Abidjan Vridi",
+          duration: "3 mois (Étude, pose et raccordement)",
+          specs: "780 modules monocristallins Tier-1 (540 Wc), 3 onduleurs injection réseau 100 kW, supervision connectée SMA Sunny Portal.",
+          results: "520 MWh produits par an, couverture de 48% des besoins de l'usine, réduction d'empreinte carbone de 340 tonnes CO2/an."
+        },
+        p2: {
+          title: "Maintenance préventive & corrective de 120 sites télécoms",
+          sector: "Télécommunications & Exploitation 24/7",
+          client: "Opérateur Télécom Majeur & TowerCo CI",
+          duration: "Contrat cadre pluriannuel",
+          specs: "Inspection pylônes, serrage boulonnerie, mesure de terre (< 5 Ohms), climatisation shelters, baies d'énergie 48V.",
+          results: "Disponibilité réseau garantie à 99.9%, intervention moyenne sous 1h45 en zone urbaine et 3h en zone rurale."
+        },
+        p3: {
+          title: "Sécurisation énergétique Data Center 800 kVA",
+          sector: "Énergie Industrielle & Systèmes Critiques",
+          client: "Établissement Bancaire & Financier Abidjan Plateau",
+          duration: "6 semaines",
+          specs: "Groupe électrogène insonorisé 800 kVA Cummins, armoire d'inversion automatique double motorisation, onduleur Eaton 200 kVA en redondance N+1.",
+          results: "Continuité de service 100%, basculement sous 8 secondes sans micro-coupure pour les serveurs transactionnels."
+        },
+        p4: {
+          title: "Hybridation solaire 50 kWc pour site télécom isolé",
+          sector: "Photovoltaïque & Télécoms",
+          client: "Site relais off-grid Région Nord CI",
+          duration: "4 semaines",
+          specs: "Générateur solaire 50 kWc au sol, banc batteries Lithium LiFePO4 100 kWh 48V, régulateurs MPPT et groupe de secours 20 kVA d'appoint.",
+          results: "Diminution de 75% des rotations de camions de carburant, économie de 22 000 litres de gasoil par an."
+        },
+        p5: {
+          title: "Poste de transformation MT/BT 1250 kVA",
+          sector: "Énergie & Distribution Électrique",
+          client: "Usine Agro-alimentaire San-Pédro",
+          duration: "8 semaines",
+          specs: "Cellules Schneider SM6 33 kV, transformateur huile étanche 1250 kVA, batterie de condensateurs automatique 400 kVAr.",
+          results: "Amélioration du cosinus phi de 0.82 à 0.98, élimination totale des pénalités pour dépassement de réactif CIE."
+        },
+        p6: {
+          title: "Boucle optique & faisceaux hertziens inter-sites",
+          sector: "Télécommunications & Transmission",
+          client: "Fournisseur d'Accès Internet & Opérateur",
+          duration: "2 mois",
+          specs: "Déploiement de 45 km fibre ADSS sur poteaux mixtes, pose de 4 liaisons micro-ondes 11 GHz en secours (backhaul).",
+          results: "Bande passante sécurisée à 10 Gbps avec commutation automatique en moins de 50 ms."
+        }
+      };
+
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const projectCards = document.querySelectorAll('.project-card');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => {
+            b.classList.remove('bg-snex-navy', 'text-white');
+            b.classList.add('bg-white', 'text-slate-600');
+          });
+          btn.classList.add('bg-snex-navy', 'text-white');
+          btn.classList.remove('bg-white', 'text-slate-600');
+
+          const filter = btn.getAttribute('data-filter');
+          projectCards.forEach(card => {
+            if (filter === 'all' || card.getAttribute('data-cat') === filter) {
+              card.classList.remove('hidden');
+            } else {
+              card.classList.add('hidden');
+            }
+          });
+        });
+      });
+
+      // Project Modal
+      const modal = document.getElementById('projectModal');
+      const modalContent = document.getElementById('projectModalContent');
+      const closeModal = document.getElementById('closeProjectModal');
+
+      document.querySelectorAll('.view-project-details').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const pid = btn.getAttribute('data-id');
+          const data = projectDetailsData[pid];
+          if (data && modal && modalContent) {
+            modalContent.innerHTML = `
+              <div class="inline-flex px-3 py-1 rounded-full text-xs font-bold bg-snex-blue/10 text-snex-blue">
+                ${data.sector}
+              </div>
+              <h3 class="text-xl font-bold text-slate-900">${data.title}</h3>
+              <div class="space-y-3 text-xs text-slate-600 border-t border-slate-100 pt-3">
+                <p><strong>Client / Secteur :</strong> ${data.client}</p>
+                <p><strong>Durée / Délais :</strong> ${data.duration}</p>
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                  <strong class="text-slate-800">Spécifications techniques :</strong><br>
+                  ${data.specs}
+                </div>
+                <div class="p-3 bg-emerald-50 rounded-xl border border-emerald-200 text-emerald-800">
+                  <strong>Résultats obtenus :</strong><br>
+                  ${data.results}
+                </div>
+              </div>
+              <div class="pt-2 flex justify-end">
+                <button type="button" id="modalDevisBtn" class="px-5 py-2.5 bg-snex-orange hover:bg-orange-600 text-white font-bold text-xs rounded-xl shadow transition">
+                  Demander un devis similaire →
+                </button>
+              </div>
+            `;
+            modal.classList.remove('hidden');
+
+            const mDevisBtn = document.getElementById('modalDevisBtn');
+            if (mDevisBtn) {
+              mDevisBtn.addEventListener('click', () => {
+                modal.classList.add('hidden');
+                const devisSec = document.getElementById('devis');
+                if (devisSec) devisSec.scrollIntoView({ behavior: 'smooth' });
+              });
+            }
+          }
+        });
+      });
+
+      if (closeModal && modal) {
+        closeModal.addEventListener('click', () => modal.classList.add('hidden'));
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) modal.classList.add('hidden');
+        });
+      }
+
+      // -------------------------------------------------------------
+      // 5-STEP QUALIFIED QUOTE WIZARD (SECTION 10 CAHIER DES CHARGES)
+      // -------------------------------------------------------------
+      let currentStep = 1;
+      const totalSteps = 5;
+
+      const step1 = document.getElementById('step1');
+      const step2 = document.getElementById('step2');
+      const step3 = document.getElementById('step3');
+      const step4 = document.getElementById('step4');
+      const step5 = document.getElementById('step5');
+      const steps = [step1, step2, step3, step4, step5];
+
+      const prevBtn = document.getElementById('prevStepBtn');
+      const nextBtn = document.getElementById('nextStepBtn');
+      const submitBtn = document.getElementById('submitDevisBtn');
+
+      const progressBar = document.getElementById('stepProgressBar');
+      const labelIndicator = document.getElementById('stepLabelIndicator');
+      const percentIndicator = document.getElementById('stepPercentIndicator');
+
+      const stepLabels = [
+        "Étape 1 sur 5 : Identification de l'interlocuteur",
+        "Étape 2 sur 5 : Localisation géographique",
+        "Étape 3 sur 5 : Sélection du besoin / Pôles",
+        "Étape 4 sur 5 : Description détaillée & budget",
+        "Étape 5 sur 5 : Documents techniques & validation"
+      ];
+
+      function showStep(stepNum) {
+        steps.forEach((s, idx) => {
+          if (s) {
+            if (idx + 1 === stepNum) {
+              s.classList.remove('hidden');
+            } else {
+              s.classList.add('hidden');
+            }
+          }
+        });
+
+        const pct = (stepNum / totalSteps) * 100;
+        if (progressBar) progressBar.style.width = pct + '%';
+        if (labelIndicator) labelIndicator.textContent = stepLabels[stepNum - 1];
+        if (percentIndicator) percentIndicator.textContent = Math.round(pct) + '%';
+
+        for (let i = 1; i <= 5; i++) {
+          const b = document.getElementById(`badgeStep${i}`);
+          if (b) {
+            if (i === stepNum) {
+              b.className = "text-snex-orange font-bold";
+            } else if (i < stepNum) {
+              b.className = "text-emerald-400 font-semibold";
+            } else {
+              b.className = "text-slate-400";
+            }
+          }
+        }
+
+        if (prevBtn) {
+          if (stepNum === 1) {
+            prevBtn.classList.add('hidden');
+          } else {
+            prevBtn.classList.remove('hidden');
+          }
+        }
+
+        if (nextBtn && submitBtn) {
+          if (stepNum === totalSteps) {
+            nextBtn.classList.add('hidden');
+            submitBtn.classList.remove('hidden');
+            updateRecap();
+          } else {
+            nextBtn.classList.remove('hidden');
+            submitBtn.classList.add('hidden');
+          }
+        }
+      }
+
+      function validateStep(stepNum) {
+        if (stepNum === 1) {
+          const nom = document.getElementById('step1_nom');
+          const ent = document.getElementById('step1_entreprise');
+          const email = document.getElementById('step1_email');
+          const tel = document.getElementById('step1_telephone');
+          if (!nom.value.trim() || !ent.value.trim() || !email.value.trim() || !tel.value.trim()) {
+            return false;
+          }
+        } else if (stepNum === 2) {
+          const ville = document.getElementById('step2_ville');
+          if (!ville.value.trim()) {
+            return false;
+          }
+        } else if (stepNum === 3) {
+          const checkedPoles = document.querySelectorAll('input[name="pole_need"]:checked');
+          if (checkedPoles.length === 0) {
+            return false;
+          }
+        } else if (stepNum === 4) {
+          const desc = document.getElementById('step4_description');
+          if (!desc.value.trim()) {
+            return false;
+          }
+        }
+        return true;
+      }
+
+      function updateRecap() {
+        const nom = document.getElementById('step1_nom')?.value || '';
+        const ent = document.getElementById('step1_entreprise')?.value || '';
+        const pays = document.getElementById('step2_pays')?.value || '';
+        const ville = document.getElementById('step2_ville')?.value || '';
+        
+        const polesChecked = Array.from(document.querySelectorAll('input[name="pole_need"]:checked')).map(c => c.value);
+
+        const rContact = document.getElementById('recapContact');
+        const rLoc = document.getElementById('recapLocation');
+        const rPoles = document.getElementById('recapPoles');
+
+        if (rContact) rContact.textContent = `Contact : ${nom} (${ent})`;
+        if (rLoc) rLoc.textContent = `Lieu : ${ville}, ${pays}`;
+        if (rPoles) rPoles.textContent = `Pôle(s) : ${polesChecked.join(' + ') || 'Non spécifié'}`;
+      }
+
+      if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+          if (validateStep(currentStep)) {
+            if (currentStep < totalSteps) {
+              currentStep++;
+              showStep(currentStep);
+            }
+          } else {
+            // Visual feedback on nextBtn
+            nextBtn.classList.add('ring-2', 'ring-red-500');
+            setTimeout(() => nextBtn.classList.remove('ring-2', 'ring-red-500'), 1500);
+          }
+        });
+      }
+
+      if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+          if (currentStep > 1) {
+            currentStep--;
+            showStep(currentStep);
+          }
+        });
+      }
+
+      // File upload trigger simulation
+      const fileInput = document.getElementById('devis_file_upload');
+      const triggerBtn = document.getElementById('triggerFileUploadBtn');
+      const fileSummary = document.getElementById('fileUploadSummary');
+
+      if (triggerBtn && fileInput) {
+        triggerBtn.addEventListener('click', () => fileInput.click());
+        fileInput.addEventListener('change', (e) => {
+          if (e.target.files && e.target.files.length > 0) {
+            fileSummary.textContent = `✓ ${e.target.files.length} fichier(s) prêt(s) pour transmission`;
+          }
+        });
+      }
+
+      // Devis form submit
+      const devisForm = document.getElementById('devisMultiStepForm');
+      const successScreen = document.getElementById('devisSuccessScreen');
+      const resetDevisBtn = document.getElementById('resetDevisBtn');
+
+      if (devisForm) {
+        devisForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const randomNum = Math.floor(100 + Math.random() * 900);
+          const refDossier = `SNEX-2026-${randomNum}`;
+          const refEl = document.getElementById('generatedDossierNum');
+          if (refEl) refEl.textContent = '#' + refDossier;
+
+          devisForm.classList.add('hidden');
+          if (successScreen) successScreen.classList.remove('hidden');
+        });
+      }
+
+      if (resetDevisBtn) {
+        resetDevisBtn.addEventListener('click', () => {
+          if (devisForm) {
+            devisForm.reset();
+            devisForm.classList.remove('hidden');
+          }
+          if (successScreen) successScreen.classList.add('hidden');
+          currentStep = 1;
+          showStep(1);
+        });
+      }
+
+      // -------------------------------------------------------------
+      // ESPACE CARRIÈRE (CANDIDATURE)
+      // -------------------------------------------------------------
+      const candidatureBox = document.getElementById('candidatureBox');
+      const candTitle = document.getElementById('candidatureTitle');
+      const candPoste = document.getElementById('cand_poste');
+      const closeCandBtn = document.getElementById('closeCandidatureBtn');
+      const openSpontBtn = document.getElementById('openCandidatureSpontaneeBtn');
+
+      document.querySelectorAll('.postuler-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const job = e.currentTarget.getAttribute('data-job');
+          if (candidatureBox) {
+            candidatureBox.classList.remove('hidden');
+            if (candTitle) candTitle.textContent = `Candidature : ${job}`;
+            if (candPoste) candPoste.value = job || '';
+            candidatureBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+
+      if (openSpontBtn && candidatureBox) {
+        openSpontBtn.addEventListener('click', () => {
+          candidatureBox.classList.remove('hidden');
+          if (candTitle) candTitle.textContent = 'Candidature Spontanée';
+          if (candPoste) candPoste.value = 'Candidature Spontanée (Télécom / Énergie / Solaire)';
+          candidatureBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      }
+
+      if (closeCandBtn && candidatureBox) {
+        closeCandBtn.addEventListener('click', () => candidatureBox.classList.add('hidden'));
+      }
+
+      const candForm = document.getElementById('candidatureForm');
+      const candSuccess = document.getElementById('candidatureSuccess');
+      if (candForm) {
+        candForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          candForm.classList.add('hidden');
+          if (candSuccess) candSuccess.classList.remove('hidden');
+        });
+      }
+
+      // Quick contact form submit
+      const qcForm = document.getElementById('quickContactForm');
+      const qcSuccess = document.getElementById('quickContactSuccess');
+      if (qcForm) {
+        qcForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+
+          const name = document.getElementById('qc_nom')?.value.trim() || 'Client';
+          const email = document.getElementById('qc_email')?.value.trim() || '';
+          const phone = document.getElementById('qc_phone')?.value.trim() || 'Non renseigné';
+          const type = document.getElementById('qc_type')?.value || 'Demande';
+          const subject = document.getElementById('qc_sujet')?.value.trim() || 'Contact S_NEX';
+          const message = document.getElementById('qc_message')?.value.trim() || '';
+
+          const mailtoBody = [
+            `Nom: ${name}`,
+            `E-mail: ${email}`,
+            `Téléphone: ${phone}`,
+            `Type: ${type}`,
+            '',
+            `Message: ${message}`
+          ].join('\n');
+
+          window.location.href = `mailto:contact@snex-sarl.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(mailtoBody)}`;
+
+          qcForm.reset();
+          if (qcSuccess) {
+            qcSuccess.classList.remove('hidden');
+            setTimeout(() => qcSuccess.classList.add('hidden'), 5000);
+          }
+        });
+      }
+
+    });
+  </script>
+</body>
+</html>
